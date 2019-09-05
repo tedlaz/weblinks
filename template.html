@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Put Title Here</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<!-- Put content here -->
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

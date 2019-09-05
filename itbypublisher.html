@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Android</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Books by publisher</h3>
+<ul>
+<li><a href="http://it-ebooks.info/publisher/1/" target="_blank">The Pragmatic Programmers</a></li>
+<li><a href="http://it-ebooks.info/publisher/2/" target="_blank">Wrox</a></li>
+<li><a href="http://it-ebooks.info/publisher/3/" target="_blank">O'Reilly Media</a></li>
+<li><a href="http://it-ebooks.info/publisher/4/" target="_blank">Prentice Hall</a></li>
+<li><a href="http://it-ebooks.info/publisher/5/" target="_blank">Manning</a></li>
+<li><a href="http://it-ebooks.info/publisher/6/" target="_blank">Apress</a></li>
+<li><a href="http://it-ebooks.info/publisher/7/" target="_blank">SitePoint</a></li>
+<li><a href="http://it-ebooks.info/publisher/8/" target="_blank">Microsoft Press</a></li>
+<li><a href="http://it-ebooks.info/publisher/9/" target="_blank">Wiley</a></li>
+<li><a href="http://it-ebooks.info/publisher/10/" target="_blank">Addison-Wesley</a></li>
+<li><a href="http://it-ebooks.info/publisher/11/" target="_blank">Cisco Press</a></li>
+<li><a href="http://it-ebooks.info/publisher/12/" target="_blank">SAMS Publishing</a></li>
+<li><a href="http://it-ebooks.info/publisher/13/" target="_blank">McGraw-Hill</a></li>
+<li><a href="http://it-ebooks.info/publisher/14/" target="_blank">Packt Publishing</a></li>
+<li><a href="http://it-ebooks.info/publisher/15/" target="_blank">No Starch Press</a></li>
+<li><a href="http://it-ebooks.info/publisher/16/" target="_blank">Springer</a></li>
+</ul>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

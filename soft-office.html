@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Office software</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Λογισμικό γραφείου</h3>
+<ul>
+<li><a href="http://www.libreoffice.org/" target="_blank">Libre Office</a></li>
+<li><a href="https://www.wps.com/" target="_blank">WPS Office</a></li>
+<li><a href="http://www.odoo.com/" target="_blank">odoo (OpenERP - python ERP)</a></li>
+<li><a href="http://artha.sourceforge.net/wiki/index.php/Home" target="_blank">Artha - English Thesaurus</a></li>
+</ul>
+
+<h3>Utilities</h3>
+<ul>
+<li><a href="http://www.7-zip.org" target="_blank">7-zip best compression program!!</a></li>
+<li><a href="https://openvpn.net/" target="_blank">openVpn</a></li>
+<li><a href="http://www.freefilesync.org/download.php" target="_blank">FreeFileSync</a></li>
+<li><a href="http://windirstat.info/" target="_blank">windirstat - Οπτική απεικόνιση περιεχομένων σκληρών δίσκων</a></li>
+<li><a href="http://www.virtualbox.org/" target="_blank">VirtualBox - Free virtual software</a></li>
+</ul>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

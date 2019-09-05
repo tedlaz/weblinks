@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Προτάσεις</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Λίστες</h3>
+<ul>
+<li><a href="http://www.imdb.com/chart/top?ref_=nv_ch_250_4" target="_blank">250 Ταινίες</a></li>
+<li><a href="http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&title_type=tv_series" target="_blank">885 Τηλεοπτικές σειρές</a></li>
+</ul>
+
+<h3>Επιλεγμένες Τηλεοπτικές σειρές</h3>
+<ul>
+<li><a href="http://www.imdb.com/title/tt0944947/" target="_blank">Game of Thrones 9.5</a></li>
+<li><a href="http://www.imdb.com/title/tt0903747/" target="_blank">Breaking Bad 9.5</a></li>
+<li><a href="http://www.imdb.com/title/tt2356777/" target="_blank">True Detective 9.3</a></li>
+<li><a href="http://www.imdb.com/title/tt1475582/" target="_blank">Sherlock 9.3</a></li>
+<li><a href="http://www.imdb.com/title/tt3032476/" target="_blank">Better Call Saul 9.2</a></li>
+<li><a href="http://www.imdb.com/title/tt1856010/" target="_blank">House Of Cards 9.1</a></li>
+<li><a href="http://www.imdb.com/title/tt2802850/" target="_blank">Fargo 9.0</a></li>
+<li><a href="http://www.imdb.com/title/tt1486217/" target="_blank">Archer 8.9</a></li>
+<li><a href="http://www.imdb.com/title/tt2442560/" target="_blank">Peaky Blinders 8.8</a></li>
+<li><a href="http://www.imdb.com/title/tt1632701/" target="_blank">Suits 8.8</a></li>
+<li><a href="http://www.imdb.com/title/tt0206501/" target="_blank">Nova 8.8</a></li>
+<li><a href="http://www.imdb.com/title/tt2306299/" target="_blank">Vikings 8.6</a></li>
+<li><a href="http://www.imdb.com/title/tt0898266/" target="_blank">The Big Bang Theory 8.5</a></li>
+<li><a href="http://www.imdb.com/title/tt2710394/" target="_blank">Reign 7.7</a></li>
+</ul>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

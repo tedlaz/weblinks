@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Search</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Χάρτες</h3>
+<ul>
+<li><a href="http://map.project-osrm.org/" target="_blank">OpenStreetMap - Εύρεση διαδρομής</a></li>
+<li><a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap - Ελεύθερη Χαρτογράφηση </a></li>
+<li><a href="http://maps.google.com/maps?ie=UTF8&amp;z=12&amp;ll=38.055661,23.773727&amp;spn=0.134357,0.281868&amp;om=1" target="_blank">Google maps - Αθήνα</a></li>
+<li><a href="https://www.bing.com/maps" target="_blank">Microsoft Live Maps</a></li>
+<li><a href="http://www.marinetraffic.com/ais/" target="_blank">Marinetraffic - Κίνηση πλοίων επί χάρτου</a></li>
+<li><a href="http://www.flightradar24.com/" target="_blank">Flightradar24 - Κίνηση αεροπλάνων επί χάρτου</a></li>
+</ul>
+
+<h3>Γενικά</h3>
+<ul>
+<li><a href="http://www.whitepages.gr" target="_blank">Τηλεφωνικός κατάλογος ΟΤΕ</a></li>
+<li><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></li>
+<li><a href="http://www94.wolframalpha.com/" target="_blank">Αναζήτηση Wolfram</a></li>
+<li><a href="https://pipl.com/" target="_blank">Web search for users</a></li>
+<li><a href="https://www.cia.gov/library/publications/the-world-factbook/index.html" target="_blank">CIA World Factbook</a></li>
+<li><a href="http://www.wonderhowto.com/" target="_blank">WonderHowTo</a></li>
+<li><a href="http://www.harmonycentral.com" target="_blank">Harmony Central</a></li>
+</ul>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

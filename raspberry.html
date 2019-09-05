@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Raspberry pi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Λίστα με απαραίτητα</h3>
+<ul>
+<li><a href="http://superrepo.org/" target="_blank">Raspberry pi 2 40-45 ευρώ</a></li>
+<li><a href="http://openelec.tv/" target="_blank">Τροφοδοτικό ~ 7-10 ευρώ</a></li>
+<li><a href="http://openelec.tv/" target="_blank">Κάρτα sd 8GB 8-10 ευρώ</a></li>
+<li><a href="http://openelec.tv/" target="_blank">WIFI USB ~12 ευρώ</a></li>
+<li><a href="http://openelec.tv/" target="_blank">Κουτί 8-20 ευρώ</a></li>
+<li><a href="http://openelec.tv/" target="_blank">Καλώδιο HDMI ~5 ευρώ</a></li>
+</ul>
+
+<h3>Εγκατάσταση στο Kodi του αποθετηρίου SuperRepo </h3>
+<ul>
+<li>Κατεβάζουμε το image <a href="http://releases.openelec.tv/OpenELEC-RPi2.arm-5.0.8.img.gz" target="_blank">εδώ</a></li>
+<li>Ακολουθούμε τις <a href="http://wiki.openelec.tv/index.php/HOW-TO:Installing_OpenELEC/Creating_The_Install_Key#tab=DiskImage" target="_blank">οδηγίες</a> ανάλογα με το λειτουργικό που έχουμε</li>
+</ul>
+<ol>
+<li>Βάζουμε το raspberry pi στο κουτί</li>
+<li>Συνδέουμε το WIFI σε μια Θύρα USB</li>
+<li>Κατεβάζουμε και εγκαθιστούμε το 7zip στον υπολογιστή μας</li>
+<li>Κατεβάζουμε και εγκαθιστούμε το win32DiskImager στον υπολογιστή μας</li>
+<li>Κατεβάζουμε το image του OpenElec στον υπολογιστή μας</li>
+<li>Αποσυμπιέζουμε το image του OPenElect με το 7zip</li>
+<li>Βάζουμε την sd κάρτα στον υπολογιστή </li>
+<li>Τρέχουμε το win32DiskImager και επιλέγουμε σαν image το αποσυμπιεσμένο image του OpeneElec και σαν προορισμό την sd κάρτα</li>
+<li>Όταν τελειώσει η εγγραφή αφαιρούμε με ασφαλή τρόπο το sd και το βάζουμε στο raspberry pi</li>
+<li>Συνδέουμε το raspberry pi με το καλώδιο hdmi στην τηλεόραση</li>
+For my first ible I just wanted to give everyone a quick tutorial on how to use the HDMI-CEC protocol to control your Pi with your Tv's remote control.
+
+This is very useful because is saves you from having to buy a remote just for your Pi and also leaves you with an open usb that you would have needed for your wireless keyboard and mouse.
+Step 1: Do You Have CEC?
+
+Every manufacturer has a different trade name for CEC,
+
+Samsung - Anynet+
+Sony - BRAVIA Link or BRAVIA Sync
+Sharp - Aquos Link
+Hitachi - HDMI-CECAOC - E-link
+Pioneer - Kuro Link
+Toshiba - Regza Link or CE-Link
+LG - SimpLink
+Panasonic - VIERA Link or HDAVI Control or EZ-Sync
+Philips - EasyLink
+
+If your TV has a button, logo, or menu with one of these names or similar, congratulations you have CEC!
+</ol>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

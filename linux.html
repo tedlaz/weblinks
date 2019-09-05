@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Linux</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+<h3>Linux news</h3>
+<ul>
+<li><a href="https://www.linuxtoday.com/" target="_blank">Linux today</a></li>
+<li><a href="https://www.linuxlinks.com/" target="_blank">Linux Links !!!</a></li>
+<li><a href="https://itsfoss.com/" target="_blank">it's FOSS</a></li>
+</ul>
+
+<h3>Linux distros</h3>
+<ul>
+<li><a href="https://www.archlinux.org/" target="_blank">Arch Linux</a></li>
+<li><a href="https://rancher.com/rancher-os/" target="_blank">RancherOS</a></li>
+<li><a href="https://manjaro.org/" target="_blank">Manjaro Linux (Easy arch)</a></li>
+<li><a href="https://www.centos.org/" target="_blank">CentOS linux server</a></li>
+<li><a href="https://www.ubuntu.com/" target="_blank">Ubuntu</a></li>
+<li><a href="https://ubuntu-mate.org/" target="_blank">Ubuntu MATE</a></li>
+<li><a href="http://lubuntu.net/" target="_blank">lubuntu - very light</a></li>
+<li><a href="https://help.ubuntu.com/community/Installation/MinimalCD" target="_blank">Ubuntu Minimal (No GUI)</a></li>
+<li><a href="https://www.debian.org/" target="_blank">Debian</a></li>
+<li><a href="http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/" target="_blank">Debian non-free images</a></li>
+<li><a href="http://cdimage.debian.org/cdimage/daily-builds/daily/arch-latest/" target="_blank">Debian latest images</a></li>
+<li><a href="https://tails.boum.org/" target="_blank">Tails live - privacy for anyone anywhere</a></li>
+<li><a href="https://www.kali.org/" target="_blank">Kali Linux - Penetration testing</a></li>
+<li><a href="http://www.osboxes.org/" target="_blank">OSBOXES - Virtualbox/Vmware Linux Images</a></li>
+<li><a href="http://distrowatch.com/" target="_blank">DistroWatch</a></li>
+</ul>
+
+<h3>Install tools</h3>
+<ul>
+<li><a href="http://www.pendrivelinux.com/yumi-multiboot-usb-creator/" target="_blank">YUMI - Multiboot USB Creator</a></li>
+<li><a href="https://en.opensuse.org/SDB:Create_a_Live_USB_stick_using_Windows" target="_blank">Linux ImageWriter</a> ή
+    <a href="http://www.linuxliveusb.com/" target="_blank">Linux Live USB Creator</a>
+</li>
+<li><a href="https://github.com/chris-marsh/pureline" target="_blank">Bash prompt (powerline based)</a></li>
+</ul>
+
+<h3>Arch Linux tools</h3>
+<ul>
+<li><a href="https://www.archlinux.org/mirrorlist/" target="_blank">Arch mirrorlist</a></li>
+<li><a href="https://archive.archlinux.org/" target="_blank">Arch Linux Archive</a></li>
+<li><a href="http://averagelinuxuser.com/" target="_blank">Average Linux User</a></li>
+</ul>
+
+<h3>etc</h3>
+<ul>
+<li><a href="http://www.linux-laptop.net" target="_blank">Linux Laptop </a></li>
+<li><a href="http://peterlevi.com/variety/" target="_blank">Variety - Fantastic wallpaper changer</a></li>
+<li><a href="https://github.com/OrancheloTeam/oranchelo-icon-theme" target="_blank">Oranchelo Icons !!!</a></li>
+<li><a href="http://l3net.wordpress.com/projects/firejail/" target="_blank">Firejail</a></li>
+<li><a href="https://distrotest.net/" target="_blank">Test Linux distros online</a></li>
+<li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
+</ul>
+
+<h3>Alternative software</h3>
+<ul>
+<li><a href="https://alternativeto.net" target="_blank">alternativeTo</a></li>
+</ul>
+
+<h3>Εγκατάσταση Linux</h3>
+
+<textarea name="comments" cols="80" rows="12" readonly>
+sudo add-apt-repository ppa:peterlevi/ppa #Variety Repository
+sudo add-apt-repository ppa:numix/ppa #Numix Repository
+sudo apt-get update
+sudo apt-get install variety numix-icon-theme ubuntu-restricted-extras flashplugin-installer gdebi
+sudo apt-get install numix-icon-theme-circle
+
+#Docker installation
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
+</textarea><br>
+
+<h3>Arch Linux setup</h3>
+<ul>
+<textarea name="comments" cols="80" rows="24" readonly>
+1   Κατέβασμα iso από https://www.archlinux.org/download/
+2   iso σε usb (rufus απο windows για να γράψουμε το usb:https://rufus.akeo.ie)
+3   Bootάρουμε από το iso και ξεκινάμε.
+4   Ορίζουμε τα mirrors(https://www.archlinux.org/mirrorlist/).
+    Tρέχουμε: nano /etc/pacman.d/mirrorlist και βάζουμε πάνω πάνω το πιο κοντινό.
+5   fdisk -l # για να δούμε τι δίσκους έχουμε
+6   cfdisk /dev/sda και από το μενού επιλέγουμε dos
+6.1 Δημιουργούμε 1 partition (primary, bootable) ή εναλλακτικά
+    1. 1GB (primary, bootable)
+    2. 2GB (primary, type linux swap / Solaris)
+    3. όλος ο υπόλοιπος δίσκος (primary)
+6.2 Επιλέγουμε write για αποθήκευση των αλλαγών και Quit
+7   mkfs.ext4 /dev/sda1
+8   mkswap /dev/sda2 (Εάν έχουμε φτιάξει partition για swap)
+9   swapon /dev/sda2 (Εάν έχουμε φτιάξει partition για swap)
+10  mkfs.ext4 /dev/sda3
+11  mount /dev/sda3 /mnt
+12  mkdir /mnt/boot /mnt/var /mnt/home
+13  mount /dev/sda1 /mnt/boot
+14  ping -c 3 www.google.com # Για να βεβαιωθούμε ότι έχουμε σύνδεση internet
+15  pacstrap /mnt base base-devel
+16  pacstrap /mnt grub-bios
+17  genfstab -U /mnt >> /mnt/etc/fstab ή genfstab -p /mnt >> /mnt/etc/fstab
+    -U είναι για UUID που σημαίνει οτι οι δίσκοι είναι μοναδικοί και -p για γενικώτερο setup
+18  arch-chroot /mnt /bin/bash # Συνδεόμαστε με το νέο σύστημα
+19  nano /etc/locale.gen # Ενεργοποιούμε το locale που θέλουμε (en_US.UTF-8 UTF-8)
+20  locale-gen
+21  echo LANG=en_US.UTF-8 > /etc/locale.conf # Δημιουργούμε το αρχείο locale.conf
+22  export LANG=en_US.UTF-8
+23  hwclock --systohc --utc
+24  ls /usr/share/zoneinfo/ # Για να βρούμε Ζώνη/Χώρα
+25  rm -rf /etc/localtime # Διαγράφουμε το αρχείο localtime
+26  ln -s /usr/share/zoneinfo/Europe/Athens /etc/localtime # Δημιουργούμε σύνδεσμο για τη χώρα
+27  echo arch2017 > /etc/hostname # Ορίζουμε το όνομα του υπολογιστή
+28  systemctl enable dhcpcd.service
+29  pacman -Sy openssh
+30  systemctl enable sshd.service
+31  passwd root
+32  useradd -m -g users -G wheel -s /bin/bash ted
+33  passwd ted
+34  nano /etc/sudoers και ενεργοποιώ τη γραμμή: %wheel ALL=(ALL) ALL
+    Δημιουργία φακέλλου swap
+    fallocate -l 512M /swapfile  # Βάλτε μέγεθος ίσο με τη RAM του συστήματος
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    nano /etc/fstab και προσθέτουμε τη γραμμή:
+    /swapfile none swap defaults 0 0
+35  grub-install /dev/sda # Εγκατάσταση του grub
+36  grub-mkconfig -o /boot/grub/grub.cfg
+37  mkinitcpio -p linux
+38  exit
+39  exit
+40  umount /mnt/boot
+41  umount /mnt
+42  reboot
+
+Και ξαναμπαίνουμε στο φρέσκο σύστημα σαν root
+
+43  ping -c 3 www.google.com # Για να βεβαιωθούμε ότι έχουμε σύνδεση internet
+44  nano /etc/pacman.conf και :
+    1. Ενεργοποιούμε την επιλογή color (αφαιρούμε το #)
+    2. Ενεργοποιούμε την επιλογή TotalDownload
+    3. Προσθέτουμε κάτω από τη γραμμή #VerbosePkgLists την επιλογή: ILoveCandy
+    4. Ενεργοποιούμε το multilib(Αφαιρούμε το # και από τις δύο γραμμές)
+    5. git clone https://aur.archlinux.org/yay.git
+       cd yay
+       makepkg -si
+45  pacman -Syu
+46  pacman -S pkgfile
+47  pacman -Sy xorg xorg-xinit # Για εγκατάσταση του xserver
+48  pacman -Sy xfce4 xfce4-goodies # Εγκατάσταση Desktop Environment
+49  pacman -Sy lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+50  systemctl enable lightdm.service
+51  pacman -Sy networkmanager network-manager-applet net-tools # Για network manager
+52  systemctl enable NetworkManager.service
+52  pacman -Sy pulseaudio pulseaudio-alsa pavucontrol mpd gmpc clementine # Audio drivers
+53  pacman -S ttf-freefont ttf-ubuntu-font-family ttf-dejavu papirus-icon-theme neofetch
+54  pacman -S gvfs gvfs-smb gvfs-mtp sshfs wget samba smbclient
+    και για να δουλεύει σωστά η αναζήτηση shares στον thunar :
+      sudo echo "client max protocol = NT1" > /etc/samba/smb.conf
+55  pacman -S tumbler ffmpegthumbnailer raw-thumbnailer libgsf thunar-archive-plugin xarchiver zip unrar unzip
+
+56  pacman -S xdg-user-dirs htop mpv  conky conky-manager
+57  Εγκατάσταση drivers κάρτας γραφικών.
+    Γιά virtualbox:
+       1 pacman -Sy virtualbox-guest-utils # Π Ρ Ο Σ Ο Χ Η επιλογή 2(arch)
+       2 systemctl enable vboxservice.service
+    Γιά Intel:
+
+    Για Nvidia:
+	pacman -S nvidia nvidia-libgl nvidia-settings lib32-libldap lib32-nvidia-utils lib32-nvidia-libgl
+
+    Για Ati:
+
+reboot και πλέον μπαίνουμε σαν κανονικοί χρήστες
+
+58  xdg-user-dirs-update # Δημιουργία default φακέλων χρήστη
+59  yay mugshot # Για τα στοιχεία του χρήστη
+60  yay pacli # Ενισχυμένο εργαλείο εγκατάστασης
+
+61  sudo pacman -Sy chromium firefox git lsb-release
+62  yay fsearch
+63  yay rar compression για εγκατάσταση του rar
+
+
+Για music player daemon (mpd) : https://wiki.archlinux.org/index.php/Music_Player_Daemon#Local_configuration_.28per_user.29
+Για multimedia codecs δες  https://wiki.archlinux.org/index.php/GStreamer
+Για να βρούμε τους πιο γρήγορους mirrors:
+   sudo pacman -S reflector
+
+   Verbosely rate and sort the five most recently synchronized mirrors by download speed, and overwrite the file /etc/pacman.d/mirrorlist:
+   sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+
+   Select the 200 most recently synchronized HTTP or HTTPS mirrors, and overwrite the file /etc/pacman.d/mirrorlist:
+   sudo reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+   Select the HTTPS mirrors synchronized within the last 12 hours and located in the US, sort them by download speed:
+   sudo reflector --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+Για development:
+   yay visual-studio-code-bin
+   yay sublime sublime-text-dev
+   yay xed  # Text editor
+   yay remarkable  # Markdown editor
+   yay marker  # Very strong markdown editor
+   sudo pacman -S gvim
+
+Για zsh:
+  pacman -S zsh awesome-terminal-fonts powerline-common powerline-fonts powerline2
+  chsh -s $(which zsh)
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  Για περισσότερες πληροφορίες εδώ : https://github.com/robbyrussell/oh-my-zsh
+
+Μερικά ενδιαφέροντα προγράμματα:
+  sudo pacman -S filezilla qbittorrent grsync bleachbit
+
+sudo pacman -S libreoffice-fresh libreoffice-fresh-el hunspell-el gimp gimp-plugin-gmic inkscape
+sudo pacman -S veracrypt keepassxc moneymanagerex sqlite sqlitebrowser simplescreenrecorder gpick nomacs
+sudo pacman -S gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly
+Για mp3 thumbnails τρέχουμε sudo pacman -S totem
+Για συγχρονισμό του pkgfile τρέχουμε pkgfile -u
+Για ένα πολύ ωραίο θέμα yaourt zuki-themes και μετά την εγκατάσταση menu->settings->appearance->zukitwo
+sudo pacman -S evince mupdf qpdfview pdfshuffler # Για preview, εμφάνιση, επεξεργασία pdf
+sudo pacman -S fbreader  # Για διάβασμα e-books
+yay gtkhash-thunar
+sudo pacman -S baobab  # Που καταναλώνεται αποθηκευτικός χώρος
+
+</textarea><br>
+</ul>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>
+

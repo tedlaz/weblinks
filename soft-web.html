@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Web software</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Browsers</h3>
+<ul>
+<li>
+    <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> και
+    <a href="chromeExt.html">Eπεκτάσεις</a>
+</li>
+<li>
+    <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> και
+    <a href="firefoxExtensions.html">Eπεκτάσεις</a>
+</li>
+<li><a href="https://www.torproject.org/" target="_blank">Tor Firefox</a></li>
+</ul>
+
+<h3>Utilities</h3>
+<ul>
+<li><a href="http://bleachbit.sourceforge.net/" target="_blank">Bleachbit για ασφαλή καθαρισμό συστήματος</a></li>
+<li><a href="http://www.clipconverter.cc/" target="_blank">ClipConverter - Online Μετατροπέας youtube</a></li>
+</ul>
+
+<h3>Servers for varius jobs</h3>
+<ul>
+<li><a href="https://talky.io/" target="_blank">talky - Easy Chat, Video conference</a></li>
+</ul>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Σινεμά - Τηλεόραση</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Πληροφορίες για ταινίες-σειρές</h3>
+<ul>
+<li><a href="http://www.imdb.com/" target="_blank">IMDB - Internet Movies Database</a></li>
+<li><a href="https://www.themoviedb.org" target="_blank">The Movie DB</a></li>
+<li><a href="https://topdocumentaryfilms.com/" target="_blank">Top documentary films</a></li>
+</ul>
+
+<h3>Ταινίες-Σειρές</h3>
+<ul>
+<li><a href="https://www.dvd-trailers.gr/" target="_blank">dvd-trailers.gr - Πληροφορίες για Ελληνικές (και όχι μόνο) ταινίες</a></li>
+<li><a href="http://greek-movies.com/" target="_blank">Greek-movies.com</a></li>
+<li><a href="http://links.snahp.it/725online.tainies.seires" target="_blank">Onl1ne.Tain1es.Seires</a></li>
+<li><a href="http://links.snahp.it/3Gia.Katebasma.Tainies.Seires.Loipa" target="_blank">GiaKAtebasma</a></li>
+<li><a href="http://www.filmon.com/" target="_blank">FilmOn</a></li>
+<li><a href="https://kisscartoon.is/" target="_blank">KissCartoon</a></li>
+</ul>
+
+<h3>Υπότιτλοι</h3>
+<ul>
+<li><a href="http://www.subtitles.gr/" target="_blank">subtitles.gr</a></li>
+<li><a href="http://www.opensubtitles.org/" target="_blank">Open Subtitles</a></li>
+<li><a href="http://www.subs4free.com/" target="_blank">Subs4free</a></li>
+</ul>
+
+<h3>Live-TV</h3>
+<ul>
+<li><a href="http://livetv.sx/enx/" target="_blank">live sports</a></li>
+<li><a href="http://acesoplisting.in/" target="_blank">Acestreams-sopcast</a></li>
+<li><a href="https://www.reddit.com/r/LiveTvLinks/comments/5tgfqa/live_sports_events_ppvs/">more from redit</a></li>
+</ul>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

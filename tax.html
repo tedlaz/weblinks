@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Φορολογικά</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+<script>
+function checkAFM (aa)
+{
+   afm = document.getElementById("c").value
+   afm += ''
+   if(!afm || afm.length != 9) {
+        document.getElementById("f").innerHTML = '';
+        return false;
+    }
+   afm = afm.split('').reverse().join('');
+
+   var Num1 = 0;
+   for(var iDigit= 1; iDigit <=  8; iDigit++)
+   {
+      Num1 += afm.charAt(iDigit) << iDigit;
+      if(isNaN(Num1)) return false;
+   }
+
+   v1 = (Num1 % 11) % 10 == afm.charAt(0);
+   if(v1){
+    document.getElementById("f").style.color = "green";
+    document.getElementById("f").innerHTML = 'Σωστό (Μπορεί να είναι ΑΦΜ)';
+    } else {
+        document.getElementById("f").style.color = "red";
+        document.getElementById("f").innerHTML = 'Λάθος (Δεν είναι ΑΦΜ)';
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+<h3>Φορολογικά</h3>
+<ul>
+<li><a href="http://www.taxheaven.gr" target="_blank">TaxHeaven</a></li>
+<li><a href="http://www.gsis.gr" target="_blank">Γενική Γραμματεία Πληροφοριακών Συστημάτων - Φορολογικά</a></li>
+<li><a href="https://www1.gsis.gr/webtax2/telhkykl" target="_blank">Βρες και εκτύπωσε τα τέλη κυκλοφορίας</a></li>
+<li><a href="https://www.koinonikomerisma.gr/" target="_blank">Κοινωνικό μέρισμα</a></li>
+<li><a href="https://www.idika.gr/kot" target="_blank">Κοινωνικό Οικιακό Τιμολόγιο</a></li>
+<li><a href="https://keaprogram.gr/pubnr/Account/Login" target="_blank">Κοινωνικό Εισόδημα Αλληλεγγύης</a></li>
+<li><a href="https://www.idika.gr/athenacard/" target="_blank">Ath.Ena Card ανεργίας/ αναπηρίας</a></li>
+<li><a href="http://www.taxnews.me/demo/" target="_blank">Έλεγχος Φορολογικής Δήλωσης Online</a></li>
+<li><a href="http://et.diavgeia.gov.gr" target="_blank">Διαύγεια</a></li>
+<li><a href="http://www.et.gr/" target="_blank">Εθνικό Τυπογραφείο</a></li>
+</ul>
+
+<h3>Ασφαλιστικά - Εργασιακά</h3>
+<ul>
+<li><a href="http://www.efka.gov.gr/" target="_blank">ΕΦΚΑ</a></li>
+<li><a href="http://www.ika.gr" target="_blank">IKA</a></li>
+<li><a href="https://apps.ika.gr/eInsEligibility/" target="_blank">IKA Ασφαλιστική Ικανότητα</a></li>
+<li><a href="http://www.oaee.gr" target="_blank">ΤΕΒΕ-ΟΑΕΕ</a></li>
+<li><a href="http://www.etea.gov.gr/" target="_blank">ΕΤΕΑ(ΤΕΑΔΥ, κλπ) Ενιαίο Ταμείο Επικουρικής Ασφάλισης</a></li>
+<li><a href="http://www.mtpy.gr/" target="_blank">ΜΤΠΥ Μετοχικό Ταμείο Πολιτικών Υπαλλήλων</a></li>
+<li><a href="http://www.tsmede.gr" target="_blank">ΤΣΜΕΔΕ</a></li>
+<li><a href="http://www.eopyy.gov.gr/MedSupplier/Index#" target="_blank">ΕΟΠΥΥ - Γιατροί - Διαγνωστικά - Φυσιοθεραπευτές</a></li>
+<li><a href="http://www.den.gr" target="_blank">Δελτίο Εργατικής Νομοθεσίας</a></li>
+<li><a href="https://www.amka.gr/AMKAGR/" target="_blank">Έλεγχος-Εύρεση ΑΜΚΑ</a></li>
+<li><a href="https://eservices.yeka.gr" target="_blank">ΣΕΠΕ - Ηλεκτρονική Υποβολή Εργασιακών (Προσλήψεις κλπ)</a></li>
+<li><a href="http://ergatika.gr" target="_blank">Ergatika.gr - Μισθοδοσίες - Υποβολές κλπ</a></li>
+<li><a href="https://www.atlas.gov.gr/ATLAS/Atlas/Login.aspx" target="_blank">Εθνικό Μητρώο Ασφάλισης</a></li>
+<li><a href="https://www.kepea.gr/" target="_blank">ΓΣΕΕ Κέντρο πληροφόρησης Εργαζομένων & ανέργων</a></li>
+</ul>
+<h3>Διάφορα</h3>
+<ul>
+<li><a href="http://www.dpa.gr/" target="_blank">Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a></li>
+</ul>
+<h3>Έλεγχος ΑΦΜ</h3>
+<ul>
+<li><a href="http://ec.europa.eu/taxation_customs/vies/" target="_blank">VIES - Έλεγχος ΑΦΜ</a></li>
+<p>Αλγοριθμικός έλεγχος Ελληνικού ΑΦΜ: </p>
+<input id="c" onkeyup="checkAFM(document.getElementById('c').value)" placeholder="Δώσε ΑΦΜ εδώ">
+<h1 id="f"></h1>
+</ul>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Magazines</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Ελληνικά</h3>
+<ul>
+<li><a href="http://hotdoc.gr/" target="_blank">HotDoc</a></li>
+<li><a href="http://deltahacker.gr/" target="_blank">DeltaHacker</a></li>
+</ul>
+
+<h3>English</h3>
+<ul>
+<li><a href="http://www.linuxformat.com/" target="_blank">Linux Format</a></li>
+<li><a href="http://fullcirclemagazine.org/" target="_blank">Ubuntu-Fullcircle</a></li>
+<li><a href="http://www.linuxjournal.com/" target="_blank">Linux Journal</a></li>
+<li><a href="http://www.pcgamer.com/" target="_blank">PC Gamer</a></li>
+<li><a href="http://www.wired.com/" target="_blank">Wired</a></li>
+<li><a href="http://www.nationalgeographic.com/" target="_blank">National Geographic</a></li>
+<li><a href="http://www.musicradar.com/computermusic" target="_blank">Computer Music</a></li>
+</ul>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>
