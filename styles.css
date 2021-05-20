@@ -1,14 +1,10 @@
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Toggle Styles */
 body {
 	padding: 0;
 	margin: 0;
-	font: 16px Tahoma, sans-serif;
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 18px;
 	line-height: 1.5em;
 	background: #070604;
 	color: #00aa00;
