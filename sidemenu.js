@@ -8,7 +8,7 @@ document.write('\
 <li><a href="magazines.html">Magazines</a></li>\
 <li><a href="trips.html">Traveling</a></li>\
 <li><a href="music.html">Music</a></li>\
-<li><a href="tax.html">Φορολογικά-Ασφαλιστικά</a></li>\
+<li><a href="tax.html">Φορολογικά</a></li>\
 <li><a href="education.html">Educational</a></li>\
 <li><a href="windows.html">Windows</a></li>\
 <li><a href="android.html">Android</a></li>\
