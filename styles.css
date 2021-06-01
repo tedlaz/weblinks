@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
 	padding: 0;
@@ -7,10 +7,10 @@ body {
 	font-size: 18px;
 	line-height: 1.5em;
 	background: #070604;
-	color: #00aa00;
+	color: #00dd00;
 	background-image: url('hex2.png');
 }
-a {	color: #00aa00;	background: inherit; text-decoration:none; }
+a {	color: #00dd00;	background: inherit; text-decoration:none; }
 h3 { color: #f1db0a;}
 textarea {color: #000000; background:#ffffb0;}
 input {color: #000000; background:#ffffb0;}
@@ -22,7 +22,7 @@ ul { margin: 0; padding : 0; list-style : none; }
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 	background: #070604;
-	color: #00aa00;
+	color: #00dd00;
 	background-image: url('hex2.png');
 }
 
@@ -40,7 +40,7 @@ ul { margin: 0; padding : 0; list-style : none; }
     overflow-y: auto;
     background: #000;
     background-image: url('hex2.png');
-    color: #00aa00;
+    color: #00dd00;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -55,7 +55,7 @@ ul { margin: 0; padding : 0; list-style : none; }
     width: 100%;
     position: absolute;
     padding: 15px;
-    color: #00aa00;
+    color: #00dd00;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -72,24 +72,24 @@ ul { margin: 0; padding : 0; list-style : none; }
     margin: 0;
     padding: 0;
     list-style: none;
-    color: #00aa00;
+    color: #00dd00;
 }
 
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 22px;
-    color: #00aa00;
+    color: #00dd00;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #00aa00;
+    color: #00dd00;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #00aa00;
+    color: #00dd00;
     background: rgba(255,255,255,0.2);
 }
 
@@ -107,7 +107,7 @@ ul { margin: 0; padding : 0; list-style : none; }
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #00aa00;
+    color: #00dd00;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
