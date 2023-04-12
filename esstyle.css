@@ -1,0 +1,30 @@
+* {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: rgb(93, 62, 62);
+  color: white;
+}
+
+td,
+th {
+  border: solid 1px;
+  padding: 8px;
+}
+
+td {
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+}
