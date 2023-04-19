@@ -1,9 +1,12 @@
-let grows = []
+let clear_data = []
+const tbldata = document.querySelector('.table')
+const fileInput = document.getElementById('fileInput')
+
 function handleFileInputChange(event) {
   const file = event.target.files[0]
   const reader = new FileReader()
 
-  reader.onload = function (e) {
+  reader.onload = e => {
     const htmlContent = e.target.result
 
     // Parse the HTML content
@@ -17,25 +20,46 @@ function handleFileInputChange(event) {
 
     eval(esdata)
 
-    grows = datagrid18.rows
-    // grows = rows
-    // const final_data = makeCleanRows(rows)
-    // document.querySelector('.table').appendChild(makeTable(final_data))
-    render1()
+    clearData(datagrid18.rows)
+
+    renderTable()
   }
 
   reader.readAsText(file)
 }
 
-function render1() {
-  const final_data = makeCleanRows(grows)
-  document.querySelector('.table').innerHTML = ''
-  document.querySelector('.table').appendChild(makeTable(final_data))
+function renderTable() {
+  tbldata.innerHTML = ''
+  tbldata.appendChild(makeTable(vtotals(clear_data)))
 }
 
-// Add event listener to file input change event
-const fileInput = document.getElementById('fileInput')
 fileInput.addEventListener('change', handleFileInputChange)
+
+function clearData(rows) {
+  // const final_data = []
+  for (row of rows) {
+    const zita = row.data[0].trim()
+    if (zita !== '') {
+      lin = {
+        arz: zita,
+        // dat: new Date(row.data[1]),
+        dat: row.data[1],
+        // par: row.data[2],
+        v1ajia: parseFloat(row.data[7]),
+        v1fpa: parseFloat(row.data[3]),
+        v2ajia: parseFloat(row.data[8]),
+        v2fpa: parseFloat(row.data[4]),
+        v3ajia: parseFloat(row.data[9]),
+        v3fpa: parseFloat(row.data[5]),
+        v4ajia: parseFloat(row.data[10]),
+        v4fpa: parseFloat(row.data[6]),
+        v5ajia: parseFloat(row.data[11]),
+      }
+      clear_data.push(lin)
+      // console.log(lin)
+    }
+  }
+}
 
 function makeCleanRows(rows) {
   const final_data = []
@@ -61,6 +85,7 @@ function makeCleanRows(rows) {
       // console.log(lin)
     }
   }
+  cleanded_data = final_data
   return vtotals(final_data)
 }
 
@@ -114,7 +139,7 @@ function getKeysFromArray(json_objects_arr) {
       }
     })
   })
-  return array_of_keys.sort()
+  return array_of_keys
 }
 
 function rnd(val) {
@@ -124,72 +149,79 @@ function rnd(val) {
 function trimino(isodate) {
   const ymd = isodate.split('-')
   if (ymd[1] === '01') {
-    return `${ymd[0]}A`
+    return `${ymd[0]}-A`
   }
   if (ymd[1] === '02') {
-    return `${ymd[0]}A`
+    return `${ymd[0]}-A`
   }
   if (ymd[1] === '03') {
-    return `${ymd[0]}A`
+    return `${ymd[0]}-A`
   }
   if (ymd[1] === '04') {
-    return `${ymd[0]}B`
+    return `${ymd[0]}-B`
   }
   if (ymd[1] === '05') {
-    return `${ymd[0]}B`
+    return `${ymd[0]}-B`
   }
   if (ymd[1] === '06') {
-    return `${ymd[0]}B`
+    return `${ymd[0]}-B`
   }
   if (ymd[1] === '07') {
-    return `${ymd[0]}C`
+    return `${ymd[0]}-C`
   }
   if (ymd[1] === '08') {
-    return `${ymd[0]}C`
+    return `${ymd[0]}-C`
   }
   if (ymd[1] === '09') {
-    return `${ymd[0]}C`
+    return `${ymd[0]}-C`
   }
   if (ymd[1] === '10') {
-    return `${ymd[0]}D`
+    return `${ymd[0]}-D`
   }
   if (ymd[1] === '11') {
-    return `${ymd[0]}D`
+    return `${ymd[0]}-D`
   }
   if (ymd[1] === '12') {
-    return `${ymd[0]}D`
+    return `${ymd[0]}-D`
   }
 }
+
 function etisio(isodate) {
   return isodate.substring(0, 4)
 }
+
 function minas(isodate) {
   return isodate.substring(0, 7)
 }
+
+function mera(isodate) {
+  return isodate
+}
+
 let groupfn = trimino
 
 function etisios() {
   groupfn = etisio
-  console.log('etisios')
-  render1()
+  renderTable()
 }
 
 function triminos() {
   groupfn = trimino
-  console.log('triminos')
-  // document.querySelector('.table').innerHTML = ''
-  // console.log(final_data)
-  render1()
+  renderTable()
 }
 
 function minass() {
   groupfn = minas
-  console.log('miniaios')
-  render1()
+  renderTable()
+}
+
+function meras() {
+  groupfn = mera
+  renderTable()
 }
 
 function vtotals(data) {
-  var aggreg = data.reduce(function (result, line) {
+  var aggreg = data.reduce((result, line) => {
     var key = groupfn(line.dat)
 
     var curr = result[key] || {
@@ -203,21 +235,38 @@ function vtotals(data) {
       t4ajia: 0,
       t4fpa: 0,
       t5ajia: 0,
+      tsajia: 0,
+      tsfpa: 0,
+      ttotal: 0,
     }
 
-    // console.log(curr)
+    const t1ajia = rnd(curr.t1ajia + line.v1ajia)
+    const t1fpa = rnd(curr.t1fpa + line.v1fpa)
+    const t2ajia = rnd(curr.t2ajia + line.v2ajia)
+    const t2fpa = rnd(curr.t2fpa + line.v2fpa)
+    const t3ajia = rnd(curr.t3ajia + line.v3ajia)
+    const t3fpa = rnd(curr.t3fpa + line.v3fpa)
+    const t4ajia = rnd(curr.t4ajia + line.v4ajia)
+    const t4fpa = rnd(curr.t4fpa + line.v4fpa)
+    const t5ajia = rnd(curr.t5ajia + line.v5ajia)
+    const tsajia = rnd(t1ajia + t2ajia + t3ajia + t4ajia + t5ajia)
+    const tsfpa = rnd(t1fpa + t2fpa + t3fpa + t4fpa)
+    const ttotal = rnd(tsajia + tsfpa)
 
     result[key] = {
       dat: curr.dat,
-      t1ajia: rnd(curr.t1ajia + line.v1ajia),
-      t1fpa: rnd(curr.t1fpa + line.v1fpa),
-      t2ajia: rnd(curr.t2ajia + line.v2ajia),
-      t2fpa: rnd(curr.t2fpa + line.v2fpa),
-      t3ajia: rnd(curr.t3ajia + line.v3ajia),
-      t3fpa: rnd(curr.t3fpa + line.v3fpa),
-      t4ajia: rnd(curr.t4ajia + line.v4ajia),
-      t4fpa: rnd(curr.t4fpa + line.v4fpa),
-      t5ajia: rnd(curr.t5ajia + line.v5ajia),
+      t1ajia,
+      t1fpa,
+      t2ajia,
+      t2fpa,
+      t3ajia,
+      t3fpa,
+      t4ajia,
+      t4fpa,
+      t5ajia,
+      tsajia,
+      tsfpa,
+      ttotal,
     }
 
     return result
