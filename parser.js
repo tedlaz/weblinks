@@ -147,43 +147,24 @@ function rnd(val) {
 }
 
 function trimino(isodate) {
-  const ymd = isodate.split('-')
-  if (ymd[1] === '01') {
-    return `${ymd[0]}-A`
+  const vls = {
+    '01': 'A',
+    '02': 'A',
+    '03': 'A',
+    '04': 'B',
+    '05': 'B',
+    '06': 'B',
+    '07': 'C',
+    '08': 'C',
+    '09': 'C',
+    10: 'D',
+    11: 'D',
+    12: 'D',
   }
-  if (ymd[1] === '02') {
-    return `${ymd[0]}-A`
-  }
-  if (ymd[1] === '03') {
-    return `${ymd[0]}-A`
-  }
-  if (ymd[1] === '04') {
-    return `${ymd[0]}-B`
-  }
-  if (ymd[1] === '05') {
-    return `${ymd[0]}-B`
-  }
-  if (ymd[1] === '06') {
-    return `${ymd[0]}-B`
-  }
-  if (ymd[1] === '07') {
-    return `${ymd[0]}-C`
-  }
-  if (ymd[1] === '08') {
-    return `${ymd[0]}-C`
-  }
-  if (ymd[1] === '09') {
-    return `${ymd[0]}-C`
-  }
-  if (ymd[1] === '10') {
-    return `${ymd[0]}-D`
-  }
-  if (ymd[1] === '11') {
-    return `${ymd[0]}-D`
-  }
-  if (ymd[1] === '12') {
-    return `${ymd[0]}-D`
-  }
+
+  const [year, month, day] = isodate.split('-')
+  const trimino = vls[month]
+  return `${year}-${trimino}`
 }
 
 function etisio(isodate) {
