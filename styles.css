@@ -1,29 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Roboto Mono', sans-serif;
-	font-size: 18px;
-	line-height: 1.5em;
-	background: #070604;
-	color: #00dd00;
-	background-image: url('hex2.png');
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Roboto Mono', sans-serif; */
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    background: #070604;
+    color: #00dd00;
+    background-image: url('hex2.png');
 }
-a {	color: #00dd00;	background: inherit; text-decoration:none; }
-h3 { color: #f1db0a;}
-textarea {color: #000000; background:#ffffb0;}
-input {color: #000000; background:#ffffb0;}
-ul { margin: 0; padding : 0; list-style : none; }
+
+a {
+    color: #00dd00;
+    background: inherit;
+    text-decoration: none;
+}
+
+h3 {
+    color: #f1db0a;
+}
+
+textarea {
+    color: #000000;
+    background: #ffffb0;
+}
+
+input {
+    color: #000000;
+    background: #ffffb0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-	background: #070604;
-	color: #00dd00;
-	background-image: url('hex2.png');
+    background: #070604;
+    color: #00dd00;
+    background-image: url('hex2.png');
 }
 
 #wrapper.toggled {
@@ -90,7 +113,7 @@ ul { margin: 0; padding : 0; list-style : none; }
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #00dd00;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -99,18 +122,18 @@ ul { margin: 0; padding : 0; list-style : none; }
     color: #00aa00;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav>.sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
     color: #ffffff;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
     color: #00dd00;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
     color: #00aa00;
     background: none;
 }
