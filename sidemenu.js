@@ -18,6 +18,9 @@ document.write('\
 <li><a href="soft-office.html">Office-Utils software</a></li>\
 <li><a href="soft-web.html">Web software</a></li>\
 <li><a href="development.html">Development</a></li>\
+<li><a href="devjavascript.html">Development</a></li>\
+<li><a href="devpython.html">Development</a></li>\
+<li><a href="devdatabases.html">Development</a></li>\
 <li><a href="neuralnet.html">AI</a></li>\
 <li><a href="webserv.html">Web services</a></li>\
 <li><a href="personal.html">Personal</a></li>\

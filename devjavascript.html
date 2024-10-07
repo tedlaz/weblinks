@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Trips</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+<h3>Essential tools</h3>
+<ul>
+<!-- <li><a href="" target="_blank"></a></li> -->
+<li><a href="https://nodejs.org/en" target="_blank">node</a></li>
+<li><a href="https://www.npmjs.com/" target="_blank">npm</a></li>
+<li><a href="https://bun.sh/" target="_blank">Bun</a></li>
+<li><a href="https://vite.dev/" target="_blank">Vite</a></li>
+<li><a href="https://react.dev/" target="_blank">React</a></li>
+<li><a href="https://reactnative.dev/" target="_blank">React Native</a></li>
+<li><a href="https://nextjs.org/" target="_blank">NEXT.js</a></li>
+<li><a href="https://tailwindcss.com/" target="_blank">tailwindcss</a></li>
+<li><a href="https://ui.shadcn.com/" target="_blank">shadcn/ui</a></li>
+<li><a href="https://daisyui.com/" target="_blank">daisyUI</a></li>
+</ul>
+
+<h3>Database ORM</h3>
+<ul>
+<li><a href="https://www.prisma.io/" target="_blank">prisma</a></li>
+<li><a href="https://orm.drizzle.team/" target="_blank">drizzle</a></li>
+</ul>
+
+<h3>User Management</h3>
+<ul>
+<li><a href="https://clerk.com/" target="_blank">clerk</a></li>
+</ul>
+
+<h3>Other Tools</h3>
+<ul>
+<li><a href="https://icons.expo.fyi/Index" target="_blank">Icons for React Native</a></li>
+<li><a href="https://it-tools.tech/" target="_blank">IT-TOOLS</a></li>
+<li><a href="https://coding-fonts.netlify.app/" target="_blank">coding fonts</a></li>
+<li><a href="https://excalidraw.com/" target="_blank"></a>excalidraw</li>
+<li><a href="https://vercel.com/" target="_blank">vercel</a></li>
+</ul>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrap -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>

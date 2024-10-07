@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Trips</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <script src="sidemenu.js"></script>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
+
+
+
+
+<h3>Online Databases</h3>
+<ul>
+<!-- <li><a href="" target="_blank"></a></li> -->
+<li><a href="https://neon.tech/" target="_blank">NEON</a></li>
+<li><a href="https://account.mongodb.com/account/login" target="_blank">MongoDB</a></li>
+<li><a href="https://supabase.com/" target="_blank">supabase</a></li>
+<li><a href="https://turso.tech/" target="_blank">TURSO (sqlite)</a></li>
+</ul>
+
+
+<h3>Open source Databases</h3>
+<ul>
+<!-- <li><a href="" target="_blank"></a></li> -->
+<li><a href="https://www.sqlite.org/" target="_blank">SQLite</a></li>
+<li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+</ul>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- /#page-content-wrap -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+
+</html>
