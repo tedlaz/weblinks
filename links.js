@@ -239,8 +239,6 @@ const DATA = [
    {t: "Radio Paradise - The Best Internet Radio", u: "https://radioparadise.com"},
    {t: "JazzRadio", u: "https://www.jazzradio.com/"},
   ]},
-  {title: "Ωτοασπίδες - ακουστικά", links: [
-  ]},
   {title: "Παρτιτούρες", links: [
    {t: "Petrucci Music Library - Music Scores", u: "https://imslp.org/wiki/"},
    {t: "Musescore παρτιτούρες", u: "https://musescore.com/sheetmusic"},
