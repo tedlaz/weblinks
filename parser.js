@@ -3,6 +3,7 @@ const tbldata = document.querySelector('.table')
 const fileInput = document.getElementById('fileInput')
 
 function handleFileInputChange(event) {
+  clear_data = []
   const file = event.target.files[0]
   const reader = new FileReader()
 
