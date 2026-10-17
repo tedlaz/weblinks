@@ -406,7 +406,6 @@ const DATA = [
  ]},
  {id: "services", title: "Government & Services", aliases: ["tax","webserv"], sections: [
   {title: "gov.gr", from: "tax", group: "Greek Tax", links: [
-   {t: "Greek tax ID (AFM) validator", tool: "afm"},
    {t: "gov.gr", u: "https://www.gov.gr/"},
    {t: "fomo.gr - Guides to Greek government services", u: "https://www.fomo.gr/"},
    {t: "800 euro employee benefit", u: "https://supportemployees.yeka.gr"},
@@ -445,6 +444,7 @@ const DATA = [
   ]},
   {title: "VAT number check", links: [
    {t: "VIES - EU VAT number check", u: "https://ec.europa.eu/taxation_customs/vies/"},
+   {t: "Greek tax ID (AFM) validator", tool: "afm"},
   ]},
   {title: "web email", from: "webserv", group: "Web services", links: [
    {t: "mailinator", u: "https://www.mailinator.com/"},
