@@ -4,20 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070604">
   <title>ted-links</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="wrapper">
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav" id="menu"></ul>
+  <header class="topbar">
+    <button id="menu-toggle" class="icon-btn" aria-label="Μενού" aria-expanded="false">☰</button>
+    <a class="brand" href="#">ted<span>-links</span></a>
+    <div class="search-box">
+      <input id="search" type="search" placeholder="Αναζήτηση σε όλα τα links…" aria-label="Αναζήτηση" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+  </header>
+  <div class="layout">
+    <nav id="sidebar" aria-label="Κατηγορίες">
+      <ul id="menu"></ul>
     </nav>
-    <main id="page-content-wrapper">
-      <div class="toolbar">
-        <button id="menu-toggle" class="btn">Toggle Menu</button>
-        <input id="search" type="search" placeholder="Αναζήτηση σε όλα τα links..." aria-label="Αναζήτηση">
+    <div id="overlay"></div>
+    <main>
+      <div class="page-head">
+        <h1 id="page-title"></h1>
+        <span id="page-meta"></span>
       </div>
       <div id="content"></div>
     </main>
