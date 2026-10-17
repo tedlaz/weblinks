@@ -224,6 +224,30 @@ main {
     transition: border-color .2s;
 }
 
+.group {
+    column-span: all;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 14px;
+    font: 700 15px var(--mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--green);
+    scroll-margin-top: calc(var(--top) + 16px);
+}
+
+.group::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--line), transparent);
+}
+
+.group:first-child {
+    margin-top: 0;
+}
+
 .card:hover {
     border-color: rgba(0, 221, 0, 0.35);
 }

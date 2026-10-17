@@ -64,7 +64,8 @@ function render() {
   const q = $('search').value.trim().toLowerCase()
   const id = location.hash.slice(1)
   const cats = [favCategory(), ...DATA]
-  const cat = cats.find(c => c.id === id) || DATA[0]
+  // old ids (e.g. #sequrity from old bookmarks) live on as aliases
+  const cat = cats.find(c => c.id === id || c.aliases?.includes(id)) || DATA[0]
   const content = $('content')
   content.replaceChildren()
   for (const a of $('menu').querySelectorAll('a')) a.classList.toggle('active', !q && a.hash === '#' + cat.id)
@@ -74,15 +75,23 @@ function render() {
     document.title = cat.title + ' · ted-links'
     $('page-title').textContent = cat.title
     $('page-meta').textContent = count(cat) + ' links'
-    for (const s of cat.sections) content.append(card(s.title, s.links, ''))
+    for (const s of cat.sections) {
+      if (s.group) content.append(el('h2', s.group, { className: 'group', id: 's-' + s.from }))
+      content.append(card(s.title, s.links, ''))
+    }
     if (!cat.sections.length) content.append(el('p', 'Πάτα ☆ σε οποιοδήποτε link για να το προσθέσεις εδώ.', { className: 'empty' }))
+    if (id !== cat.id) $('s-' + id)?.scrollIntoView()
     return
   }
   // search: matches from all categories
   let n = 0
-  for (const c of DATA) for (const s of c.sections) {
-    const links = s.links.filter(l => [l.t, l.u, l.n].join(' ').toLowerCase().includes(q))
-    if (links.length) { n += links.length; content.append(card(s.title, links, q, c.title)) }
+  for (const c of DATA) {
+    let group = c.title
+    for (const s of c.sections) {
+      if (s.group) group = s.group
+      const links = s.links.filter(l => [l.t, l.u, l.n].join(' ').toLowerCase().includes(q))
+      if (links.length) { n += links.length; content.append(card(s.title, links, q, group)) }
+    }
   }
   $('page-title').textContent = 'Αναζήτηση: ' + $('search').value.trim()
   $('page-meta').textContent = n + ' αποτελέσματα'
@@ -112,5 +121,5 @@ $('search').onkeydown = e => {
 document.onkeydown = e => {
   if (e.key === '/' && document.activeElement !== $('search')) { e.preventDefault(); $('search').focus() }
 }
-window.onhashchange = () => { $('search').value = ''; render(); window.scrollTo(0, 0) }
+window.onhashchange = () => { $('search').value = ''; window.scrollTo(0, 0); render() }
 render()
