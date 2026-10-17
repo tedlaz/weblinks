@@ -34,14 +34,12 @@ const DATA = [
    {t: "dwrean.net", u: "https://www.dwrean.net/"},
    {t: "lovefortechnology.net", u: "https://www.lovefortechnology.net/"},
    {t: "arsTECHNICA", u: "https://arstechnica.com/"},
-   {t: "it's F.O.S.S.", u: "https://itsfoss.com/"},
    {t: "opensource.com", u: "https://opensource.com/"},
    {t: "The Verge", u: "https://www.theverge.com/"},
    {t: "Techblog.gr", u: "https://techblog.gr/"},
    {t: "Engadget - News", u: "https://www.engadget.com/"},
    {t: "Digital Photography Review", u: "https://www.dpreview.com/"},
    {t: "HowToGeek", u: "https://www.howtogeek.com/"},
-   {t: "Greek jokes", u: "https://anekdota.duckdns.org/"},
   ]},
   {title: "Video online - TV", links: [
    {t: "Vimeo", u: "https://vimeo.com/"},
@@ -72,10 +70,7 @@ const DATA = [
    {t: "Google", u: "https://google.com/"},
    {t: "DuckDuckGo", u: "https://duckduckgo.com/"},
    {t: "zlibrary english pdf", u: "https://1lib.sk/s/?content_type=book&languages%5B%5D=english&extensions%5B%5D=PDF"},
-   {t: "imdb", u: "https://www.imdb.com/"},
    {t: "wikipedia", u: "https://en.wikipedia.org/"},
-   {t: "skroutz", u: "https://www.skroutz.gr/"},
-   {t: "bestprice", u: "https://www.bestprice.gr/"},
    {t: "CIA's World Factbook", u: "https://www.cia.gov/the-world-factbook/"},
   ]},
   {title: "Maps", links: [
@@ -174,7 +169,7 @@ const DATA = [
    {t: "The new guitarist's scepter", u: "https://kithara.to"},
   ]},
   {title: "Music Production", links: [
-   {t: "Audacity", u: "https://audacity.sourceforge.net/download/"},
+   {t: "Audacity", u: "https://www.audacityteam.org/"},
    {t: "ocenAudio", u: "https://www.ocenaudio.com.br/en/startpage"},
    {t: "Ardour", u: "https://ardour.org/"},
    {t: "Guitarix (Linux only)", u: "https://guitarix.org/"},
@@ -461,6 +456,7 @@ const DATA = [
    {t: "Image compression, etc", u: "https://github.com/bradtraversy/design-resources-for-developers#others"},
    {t: "Image colorizer", u: "https://imagecolorizer.com/colorize.html"},
    {t: "Birme image resizer", u: "https://www.birme.net/?target_width=512&target_height=512"},
+   {t: "Online OCR tool", u: "https://2ocr.com/online-ocr-greek/"},
   ]},
   {title: "DNS", links: [
    {t: "google 8.8.8.8 8.8.4.4", u: "https://developers.google.com/speed/public-dns"},
@@ -499,8 +495,6 @@ const DATA = [
    {t: "HETZNER", u: "https://www.hetzner.com/cloud/cost-optimized"},
    {t: "HOSTINGER", u: "https://www.hostinger.com/vps-hosting#refresh"},
    {t: "CONTABO", u: "https://contabo.com/en/vps/"},
-   {t: "Cloudflare", u: "https://www.cloudflare.com/"},
-   {t: "Render", u: "https://render.com/"},
   ]},
   {title: "Bills (OTE, DEI, Wind)", links: [
    {t: "OTE - My e-Bill", u: "https://ebill.ote.gr/"},
@@ -540,18 +534,12 @@ const DATA = [
    {t: "Reddit Links for books", u: "https://www.reddit.com/r/Piracy/wiki/megathread#wiki_iv._ebooks.2Ftextbooks"},
    {t: "Livrivox - Free audio books", u: "https://librivox.org/"},
    {t: "Loyalbooks - Free audio books", u: "https://www.loyalbooks.com/"},
-   {t: "Base64 Encoder / Decoder", u: "https://www.base64decode.org/"},
   ]},
   {title: "Etc", links: [
    {t: "Internet Archive", u: "https://archive.org/index.php"},
    {t: "Megadownloads", u: "https://fora.snahp.eu/"},
    {t: "Avax", u: "https://avxhm.se/"},
    {t: "sendme", u: "https://github.com/n0-computer/sendme"},
-  ]},
-  {title: "YouTube", links: [
-   {t: "YouTube-dl", u: "https://ytdl-org.github.io/youtube-dl/download.html", n: "for mp3 run: youtube-dl -x --audio-format mp3 --embed-thumbnail --add-metadata youtubelink"},
-  ]},
-  {title: "T0rr3nts", links: [
    {t: "T0rrentFreak", u: "https://torrentfreak.com/"},
   ]},
   {title: "Wallpapers - Images", links: [
@@ -562,8 +550,6 @@ const DATA = [
    {t: "foter.com - 250 million free images !!!", u: "https://foter.com/"},
    {t: "Flickr - Photos", u: "https://www.flickr.com/"},
    {t: "Open ClipArt", u: "http://www.openclipart.org/"},
-   {t: "flaticon - Free icons", u: "https://www.flaticon.com/"},
-   {t: "pixabay - Free images", u: "https://pixabay.com/"},
    {t: "CLEAN-PNG", u: "https://www.cleanpng.com/"},
   ]},
   {title: "Server Software", from: "soft-server", group: "Server", links: [
@@ -589,8 +575,6 @@ const DATA = [
    {t: "IrfanView", u: "https://www.irfanview.com/"},
   ]},
   {title: "Audio", links: [
-   {t: "Audacity", u: "https://www.audacityteam.org/"},
-   {t: "ocenAudio", u: "https://www.ocenaudio.com.br/en/startpage"},
    {t: "Mixxx - Free D.J. Software", u: "https://mixxx.sourceforge.net/"},
    {t: "Clementine music player", u: "https://www.clementine-player.org/"},
   ]},
@@ -625,10 +609,7 @@ const DATA = [
   ]},
   {title: "Utilities", links: [
    {t: "7-zip best compression program!!", u: "https://www.7-zip.org"},
-   {t: "openVpn", u: "https://openvpn.net/"},
    {t: "WinDirStat - Visual disk usage", u: "https://windirstat.info/"},
-   {t: "VirtualBox - Free virtual software", u: "https://www.virtualbox.org/"},
-   {t: "Ventoy Multi boot from USB", u: "https://www.ventoy.net/"},
    {t: "PDF arranger", u: "https://github.com/pdfarranger/pdfarranger"},
   ]},
   {title: "Browsers", from: "soft-web", group: "Web", links: [
@@ -638,10 +619,6 @@ const DATA = [
    {t: "Firefox Extensions", u: "#firefoxExtensions"},
    {t: "Tor Firefox", u: "https://www.torproject.org/"},
    {t: "Opera GX", u: "https://www.opera.com/gx"},
-  ]},
-  {title: "Image tools", links: [
-   {t: "Color Wheel (canvas)", u: "https://www.canva.com/colors/color-wheel/"},
-   {t: "Paletton colors", u: "https://paletton.com/"},
   ]},
   {title: "Essential Chrome extensions", from: "chromeExt", group: "Chrome", links: [
    {t: "mblock", u: "https://chrome.google.com/webstore/detail/%C2%B5block/cjpalhdlnbpafiamejdnhcphjbkeiagm"},
@@ -682,7 +659,6 @@ const DATA = [
    {t: "Shutup10 - Free antispy tool", u: "https://www.oo-software.com/en/shutup10"},
    {t: "BleachBit - Clean Your System and Free Disk Space", u: "https://www.bleachbit.org/"},
    {t: "notepad++", u: "https://notepad-plus-plus.org/"},
-   {t: "Visual Studio Code", u: "https://code.visualstudio.com/"},
    {t: "DarkThumbs (Thumbnails for EPUB, RAR, ZIP files)", u: "https://github.com/fire-eggs/DarkThumbs"},
   ]},
   {title: "Application installation tools", links: [
@@ -691,13 +667,6 @@ const DATA = [
    {t: "pendriveapps.com - Portable apps, no install", u: "https://www.pendriveapps.com/"},
    {t: "Picasa, Chrome, etc from Google", u: "https://www.google.com.gr/intl/el/options/index.html"},
    {t: "filehippo - old versions of programs", u: "https://filehippo.com/"},
-  ]},
-  {title: "System Utilities", links: [
-   {t: "Avast antivirus", u: "https://www.avast.com/free-antivirus-download"},
-   {t: "PDF reDirect - Print to PDF", u: "https://www.exp-systems.com/"},
-   {t: "CCleaner - Disk & registry cleaner", u: "https://www.piriform.com/ccleaner"},
-   {t: "Hard Disk Drive Tuner-Tester. Very Good !!", u: "https://www.hdtune.com"},
-   {t: "mobaxterm", u: "https://mobaxterm.mobatek.net/"},
   ]},
   {title: "Android News", from: "android", group: "Android", links: [
    {t: "Android Authority", u: "https://www.androidauthority.com/"},
@@ -726,7 +695,6 @@ const DATA = [
    {t: "CentOS linux server", u: "https://www.centos.org/"},
    {t: "Tails live - privacy for anyone anywhere", u: "https://tails.boum.org/"},
    {t: "Kali Linux - Penetration testing", u: "https://www.kali.org/"},
-   {t: "OSBOXES - Virtualbox/Vmware Linux Images", u: "https://www.osboxes.org/"},
    {t: "DistroWatch", u: "https://distrowatch.com/"},
   ]},
   {title: "Install tools", links: [
@@ -746,7 +714,6 @@ const DATA = [
    {t: "Variety - Fantastic wallpaper changer", u: "https://peterlevi.com/variety/"},
    {t: "Oranchelo Icons !!!", u: "https://github.com/OrancheloTeam/oranchelo-icon-theme"},
    {t: "Firejail", u: "https://l3net.wordpress.com/projects/firejail/"},
-   {t: "Docker", u: "https://www.docker.com/"},
   ]},
   {title: "Alternative software", links: [
    {t: "alternativeTo", u: "https://alternativeto.net"},
@@ -760,6 +727,8 @@ const DATA = [
    {t: "flaticon", u: "https://www.flaticon.com/"},
    {t: "freesound.org", u: "https://freesound.org/"},
    {t: "The VG Game resource", u: "https://www.models-resource.com/"},
+   {t: "Color Wheel (canvas)", u: "https://www.canva.com/colors/color-wheel/"},
+   {t: "Paletton colors", u: "https://paletton.com/"},
   ]},
   {title: "Help offline or online", links: [
    {t: "Tutorials Point", u: "https://www.tutorialspoint.com/"},
@@ -769,7 +738,6 @@ const DATA = [
    {t: "MDN web docs", u: "https://developer.mozilla.org/en-US/"},
   ]},
   {title: "Online programming tools", links: [
-   {t: "google idx (vscode online)", u: "https://idx.google.com/"},
    {t: "repl.it - Online programming", u: "https://repl.it/"},
    {t: "codepen.io - Online html, css, javascript", u: "https://codepen.io/"},
    {t: "codeply - Online html Bootstrap", u: "https://www.codeply.com/"},
@@ -779,12 +747,12 @@ const DATA = [
    {t: "yaml parser", u: "https://yaml-online-parser.appspot.com/"},
    {t: "Online XSD to XML converter", u: "https://www.liquid-technologies.com/online-xsd-to-xml-converter"},
    {t: "Browxy - online java editor", u: "https://browxy.com/"},
+   {t: "Base64 Encoder / Decoder", u: "https://www.base64decode.org/"},
   ]},
   {title: "docker", links: [
    {t: "Docker", u: "https://www.docker.com/"},
    {t: "Docker hub", u: "https://hub.docker.com"},
    {t: "LinuxServer.io - Docker Containers", u: "https://www.linuxserver.io/"},
-   {t: "Play with Docker", u: "https://labs.play-with-docker.com/"},
    {t: "portainer.io the easy way to manage docker", u: "https://portainer.io/install"},
   ]},
   {title: "Virtual", links: [
@@ -793,23 +761,23 @@ const DATA = [
    {t: "Vagrant", u: "https://www.vagrantup.com/"},
    {t: "osboxes", u: "https://www.osboxes.org/"},
   ]},
-  {title: "Deploy to web", links: [
+  {title: "Deploy & Hosting", links: [
    {t: "pythonAnywhere - host python web applications", u: "https://www.pythonanywhere.com/"},
    {t: "Heroku", u: "https://www.heroku.com/"},
    {t: "Netlify", u: "https://www.netlify.com/"},
+   {t: "vercel", u: "https://vercel.com/"},
+   {t: "Cloudflare", u: "https://www.cloudflare.com/"},
+   {t: "Render", u: "https://render.com/"},
   ]},
   {title: "Web development", links: [
    {t: "wkHtmlToPDF", u: "https://wkhtmltopdf.org/"},
    {t: "Let's Encrypt Https Certificate Authority", u: "https://letsencrypt.org/"},
-   {t: "DuckDNS - free dynamic DNS", u: "https://www.duckdns.org/"},
    {t: "Rapid API - Discover thousands of APIs", u: "https://rapidapi.com/"},
   ]},
   {title: "Android", links: [
    {t: "Android", u: "https://www.android.com/"},
    {t: "Android developer", u: "https://developer.android.com/"},
    {t: "Android Studio", u: "https://developer.android.com/sdk/index.html"},
-   {t: "React Native", u: "https://reactnative.dev/"},
-   {t: "NativeWind (React Native tailwindcss)", u: "https://www.nativewind.dev/"},
   ]},
   {title: "Online Image/Text Editing", links: [
    {t: "diagrams.net (draw.io)", u: "https://app.diagrams.net/"},
@@ -825,12 +793,6 @@ const DATA = [
    {t: "Greek free polytonic fonts", u: "https://www.russellcottrell.com/greek/fonts.asp"},
    {t: "fontawesome", u: "https://fontawesome.com/"},
    {t: "Nerd Fonts", u: "https://nerdfonts.com/"},
-  ]},
-  {title: "Databases", links: [
-   {t: "sqlite", u: "https://www.sqlite.org"},
-   {t: "sqlcipher-sqlite encrypted", u: "https://www.zetetic.net/sqlcipher/"},
-   {t: "PostgreSQL", u: "https://www.postgresql.org"},
-   {t: "MongoDB", u: "https://www.mongodb.org/"},
   ]},
   {title: "Installers", links: [
    {t: "pyInstaller(Windows)", u: "https://www.pyinstaller.org/"},
@@ -858,15 +820,12 @@ const DATA = [
    {t: "Bun", u: "https://bun.sh/"},
    {t: "React", u: "https://react.dev/"},
    {t: "React Native", u: "https://reactnative.dev/"},
+   {t: "NativeWind (React Native tailwindcss)", u: "https://www.nativewind.dev/"},
    {t: "npm", u: "https://www.npmjs.com/"},
    {t: "NEXT.js", u: "https://nextjs.org/"},
    {t: "tailwindcss", u: "https://tailwindcss.com/"},
    {t: "shadcn/ui", u: "https://ui.shadcn.com/"},
    {t: "daisyUI", u: "https://daisyui.com/"},
-  ]},
-  {title: "Database ORM", links: [
-   {t: "prisma", u: "https://www.prisma.io/"},
-   {t: "drizzle", u: "https://orm.drizzle.team/"},
   ]},
   {title: "User Management", links: [
    {t: "Auth0", u: "https://auth0.com/"},
@@ -875,7 +834,6 @@ const DATA = [
   {title: "Other Tools", links: [
    {t: "Icons for React Native", u: "https://icons.expo.fyi/Index"},
    {t: "IT-TOOLS", u: "https://it-tools.tech/"},
-   {t: "vercel", u: "https://vercel.com/"},
   ]},
   {title: "Essential tools", from: "devpython", group: "Python", links: [
    {t: "Python", u: "https://www.python.org/"},
@@ -891,13 +849,6 @@ const DATA = [
    {t: "odoo - github", u: "https://github.com/odoo"},
    {t: "RealPython", u: "https://realpython.com/"},
    {t: "ASTRAL (Python tools in Rust like uv and ruff)", u: "https://astral.sh/"},
-  ]},
-  {title: "other tools", links: [
-   {t: "Awesome Python", u: "https://github.com/vinta/awesome-python?tab=readme-ov-file"},
-   {t: "AStRAL", u: "https://astral.sh/"},
-   {t: "FastAPI", u: "https://fastapi.tiangolo.com/"},
-   {t: "Pydantic", u: "https://docs.pydantic.dev/latest/"},
-   {t: "django", u: "https://www.djangoproject.com/"},
    {t: "flet", u: "https://flet.dev/"},
   ]},
   {title: "Online Databases", from: "devdatabases", group: "Databases", links: [
@@ -908,7 +859,13 @@ const DATA = [
   ]},
   {title: "Open source Databases", links: [
    {t: "SQLite", u: "https://www.sqlite.org/"},
+   {t: "sqlcipher-sqlite encrypted", u: "https://www.zetetic.net/sqlcipher/"},
    {t: "PostgreSQL", u: "https://www.postgresql.org/"},
+   {t: "MongoDB", u: "https://www.mongodb.org/"},
+  ]},
+  {title: "ORM", links: [
+   {t: "prisma", u: "https://www.prisma.io/"},
+   {t: "drizzle", u: "https://orm.drizzle.team/"},
   ]},
  ]},
  {id: "ai", title: "AI", aliases: ["neuralnet"], sections: [
@@ -933,7 +890,6 @@ const DATA = [
    {t: "chatgpt", u: "https://chatgpt.com/"},
    {t: "Claude", u: "https://claude.ai/"},
    {t: "MISTRAL", u: "https://mistral.ai/"},
-   {t: "Stitch", u: "https://stitch.withgoogle.com/"},
   ]},
   {title: "Google tools", links: [
    {t: "Gemini", u: "https://deepmind.google/technologies/gemini/"},
@@ -968,7 +924,6 @@ const DATA = [
    {t: "bolt", u: "https://bolt.new/"},
   ]},
   {title: "Code Editors", links: [
-   {t: "VsCode", u: "https://code.visualstudio.com/"},
    {t: "antigravity", u: "https://antigravity.google/"},
    {t: "Cursor", u: "https://cursor.com/"},
    {t: "Windsurf", u: "https://windsurf.com/"},
@@ -987,7 +942,6 @@ const DATA = [
    {t: "OpenML", u: "https://www.openml.org"},
    {t: "DatascienceWeekly", u: "https://www.datascienceweekly.org/newsletters"},
    {t: "Google AI", u: "https://ai.google/tools/"},
-   {t: "Online OCR tool", u: "https://2ocr.com/online-ocr-greek/"},
   ]},
   {title: "Online ML tools", links: [
    {t: "Google Colaboratory", u: "https://colab.research.google.com"},
@@ -1017,10 +971,11 @@ const DATA = [
   {title: "Build a PC", links: [
    {t: "Parts list builder", u: "https://www.bestprice.gr/"},
   ]},
-  {title: "Raspberry pi", links: [
+  {title: "Raspberry pi - Arduino", links: [
    {t: "Raspberry pi", u: "https://www.raspberrypi.org"},
    {t: "Raspberry pi - Magazine", u: "https://www.raspberrypi.org/magpi/"},
    {t: "Arch Linux Arm", u: "https://archlinuxarm.org/"},
+   {t: "Arduino Project", u: "https://arduino.cc/"},
   ]},
   {title: "Hardware for a Kodi (XBMC) media PC", links: [
    {t: "Intel NUC", u: "https://www.skroutz.gr/c/329/barebones.html?from=most-popular&keyphrase=nuc"},
@@ -1053,8 +1008,6 @@ const DATA = [
    {t: "3Ders - 3D printing news", u: "https://www.3ders.org/"},
   ]},
   {title: "Misc", links: [
-   {t: "Arduino Project", u: "https://arduino.cc/"},
-   {t: "Raspberry Pi - Credit-card sized computer", u: "https://www.raspberrypi.org/"},
    {t: "Magic lantern for canon cameras", u: "https://www.magiclantern.fm/"},
   ]},
   {title: "Recovery", links: [
@@ -1105,11 +1058,11 @@ const DATA = [
    {t: "AnyDesk", u: "https://anydesk.com/"},
    {t: "Real VNC", u: "https://www.realvnc.com/"},
    {t: "FileZilla ftp", u: "https://filezilla.sourceforge.net/"},
-   {t: "putty", u: "http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html", n: "Windows only"},
    {t: "Winscp", u: "https://winscp.net/", n: "Windows only"},
    {t: "OpenVpn", u: "https://openvpn.net/"},
    {t: "Easy openvpn Install", u: "https://github.com/Nyr/openvpn-install"},
    {t: "Zerotier vpn ;-)", u: "https://www.zerotier.com/"},
+   {t: "tailscale ;-)", u: "https://tailscale.com/"},
   ]},
  ]},
  {id: "personal", title: "Personal & Games", aliases: ["personal","games"], sections: [
@@ -1127,6 +1080,7 @@ const DATA = [
    {t: "Discord", u: "https://discordapp.com/login"},
    {t: "foldscope - 1 dollar microscope !!!", u: "https://www.foldscope.com/"},
    {t: "Podcast about developers", u: "https://www.mappingthejourney.com/"},
+   {t: "Greek jokes", u: "https://anekdota.duckdns.org/"},
   ]},
   {title: "Language tools", links: [
    {t: "Forvo - Word pronunciation", u: "https://forvo.com/"},
