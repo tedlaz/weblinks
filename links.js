@@ -71,7 +71,6 @@ const DATA = [
   ]},
   {title: "YouTube", links: [
    {t: "YouTube-dl", u: "https://ytdl-org.github.io/youtube-dl/download.html", n: "for mp3 run: youtube-dl -x --audio-format mp3 --embed-thumbnail --add-metadata youtubelink"},
-   {t: "Youtube DownConvert", u: "https://y2meta.tube/"},
   ]},
   {title: "T0rr3nts", links: [
    {t: "T0rrentFreak", u: "https://torrentfreak.com/"},
@@ -172,7 +171,6 @@ const DATA = [
    {t: "wikipedia", u: "https://en.wikipedia.org/"},
    {t: "skroutz", u: "https://www.skroutz.gr/"},
    {t: "bestprice", u: "https://www.bestprice.gr/"},
-   {t: "Αναζήτηση Wolfram", u: "http://www94.wolframalpha.com/"},
    {t: "CIA's World Factbook", u: "https://www.cia.gov/the-world-factbook/"},
   ]},
   {title: "Maps", links: [
@@ -242,7 +240,6 @@ const DATA = [
    {t: "JazzRadio", u: "https://www.jazzradio.com/"},
   ]},
   {title: "Ωτοασπίδες - ακουστικά", links: [
-   {t: "etymotic - Ωτοασπίδες", u: "http://www.etymotic.com/er20.html"},
   ]},
   {title: "Παρτιτούρες", links: [
    {t: "Petrucci Music Library - Music Scores", u: "https://imslp.org/wiki/"},
@@ -300,14 +297,9 @@ const DATA = [
    {t: "ΕΡΓΑΝΗ - Εργαζόμενοι", u: "https://myergani.gov.gr/"},
    {t: "ΕΦΚΑ", u: "https://www.efka.gov.gr/"},
    {t: "ΤΕΚΑ - Ελεγχος υπαγωγής", u: "https://www.e-efka.gov.gr/el/elektronikes-yperesies/elektronike-yperesia-epibebaioses-ypagoges-teka"},
-   {t: "IKA", u: "http://www.ika.gr"},
-   {t: "IKA Ασφαλιστική Ικανότητα", u: "https://apps.ika.gr/eInsEligibility/"},
    {t: "Εθνικό Μητρώο Ασφάλισης", u: "https://www.atlas.gov.gr/ATLAS/Atlas/Login.aspx"},
    {t: "ΤΕΒΕ-ΟΑΕΕ", u: "https://www.oaee.gr"},
-   {t: "ΕΤΕΑ(ΤΕΑΔΥ, κλπ) Ενιαίο Ταμείο Επικουρικής Ασφάλισης", u: "http://www.etea.gov.gr/"},
    {t: "ΜΤΠΥ Μετοχικό Ταμείο Πολιτικών Υπαλλήλων", u: "https://www.mtpy.gr/"},
-   {t: "ΤΣΜΕΔΕ", u: "http://www.tsmede.gr"},
-   {t: "ΕΟΠΥΥ - Γιατροί - Διαγνωστικά - Φυσιοθεραπευτές", u: "http://www.eopyy.gov.gr/MedSupplier/Index#"},
    {t: "Δελτίο Εργατικής Νομοθεσίας", u: "https://www.den.gr"},
    {t: "Έλεγχος-Εύρεση ΑΜΚΑ", u: "https://www.amka.gr/AMKAGR/"},
    {t: "Ergatika.gr - Μισθοδοσίες - Υποβολές κλπ", u: "https://ergatika.gr"},
@@ -341,7 +333,6 @@ const DATA = [
    {t: "sagemath cloud - Μαθηματικά με python", u: "https://cloud.sagemath.com"},
   ]},
   {title: "Σχολικά", links: [
-   {t: "Υπουργείο Παιδείας - Νέος ιστότοπος", u: "http://digitalschool.minedu.gov.gr/"},
    {t: "Ελληνική Γλώσσα", u: "https://www.greek-language.gr/"},
    {t: "Φυσική - εικονικά πειράματα", u: "https://phet.colorado.edu/"},
    {t: "Περιοδικός Πίνακας Στοιχείων", u: "https://www.ptable.com/"},
@@ -560,7 +551,6 @@ const DATA = [
   ]},
   {title: "Deploy to web", links: [
    {t: "pythonAnywhere - host python web applications", u: "https://www.pythonanywhere.com/"},
-   {t: "Deta micros", u: "https://www.deta.sh/"},
    {t: "Heroku", u: "https://www.heroku.com/"},
    {t: "Netlify", u: "https://www.netlify.com/"},
   ]},
@@ -585,7 +575,6 @@ const DATA = [
    {t: "Overleaf - Online LaTEX", u: "https://www.overleaf.com/"},
   ]},
   {title: "Fonts", links: [
-   {t: "Coding Fonts", u: "https://coding-fonts.netlify.app/"},
    {t: "Google-Fonts", u: "https://fonts.google.com/"},
    {t: "Aka-Acid - Fonts", u: "https://www.aka-acid.com/"},
    {t: "1001 free fonts", u: "https://www.1001freefonts.com/"},
@@ -726,7 +715,6 @@ const DATA = [
    {t: "playground design", u: "https://playground.com/design"},
    {t: "glif", u: "https://glif.app/"},
    {t: "flux", u: "https://flux1.ai/create"},
-   {t: "recraft", u: "https://id.recraft.ai/"},
    {t: "Meta movie gen", u: "https://ai.meta.com/research/movie-gen/"},
   ]},
   {title: "Online Audio", links: [
@@ -759,7 +747,6 @@ const DATA = [
    {t: "KDnuggets", u: "https://www.kdnuggets.com/"},
    {t: "Varius Python libraries for machine learning", u: "https://numfocus.org/sponsored-projects"},
    {t: "OpenML", u: "https://www.openml.org"},
-   {t: "DataElixir", u: "https://dataelixir.com/newsletters/"},
    {t: "DatascienceWeekly", u: "https://www.datascienceweekly.org/newsletters"},
    {t: "Google AI", u: "https://ai.google/tools/"},
    {t: "Online OCR tool", u: "https://2ocr.com/online-ocr-greek/"},
@@ -843,7 +830,6 @@ const DATA = [
    {t: "Ote", u: "https://www.ote.gr"},
    {t: "Forthnet", u: "http://www.forthnet.gr"},
    {t: "Wind", u: "https://www.wind.gr/"},
-   {t: "Vodafone καρτοκινητή", u: "http://www.vodafone.gr/portal/infrequent/landing.action"},
   ]},
   {title: "Online Ανίχνευση δεμάτων (tracking)", links: [
    {t: "17track", u: "https://www.17track.net"},
@@ -866,18 +852,15 @@ const DATA = [
    {t: "eAPD - Εφκα Αρχείο ΑΠΔ", u: "https://tedlaz.github.io/eapd/"},
    {t: "eSchedule - Πρόγραμμα εργασίας", u: "https://tedlaz.github.io/eschedule/"},
    {t: "Προγράμματα μισθοδοσίας", u: "https://tedlaz.github.io/misjs/index.html"},
-   {t: "Κοινόχρηστα", u: "https://tedlazar.pythonanywhere.com/"},
    {t: "esend checker", u: "esend.html"},
   ]},
   {title: "Προσωπικά - Διάφορα Blogs", links: [
    {t: "Google's Art Project", u: "https://www.google.com/culturalinstitute/project/art-project"},
    {t: "Philoshophy Experiments", u: "https://www.philosophyexperiments.com/"},
-   {t: "Ted's Blog", u: "http://tedlaz.blogspot.com/"},
    {t: "Soundcloud - Sounds and Music", u: "https://soundcloud.com"},
    {t: "Discord", u: "https://discordapp.com/login"},
    {t: "foldscope - 1 dollar microscope !!!", u: "https://www.foldscope.com/"},
    {t: "Podcast about developers", u: "https://www.mappingthejourney.com/"},
-   {t: "The eye", u: "https://the-eye.eu/"},
   ]},
   {title: "Language tools", links: [
    {t: "FORVO - Σωστή προφορά λέξεων", u: "https://forvo.com/"},
@@ -885,11 +868,9 @@ const DATA = [
    {t: "Webster dictionary", u: "https://www.merriam-webster.com/"},
    {t: "ttsreader.com - Free text to speech reader", u: "https://ttsreader.com/"},
    {t: "responsivevoice.org - text to speech Greek/etc reader", u: "https://responsivevoice.org/"},
-   {t: "IBM Watson text to speech demo", u: "https://text-to-speech-demo.mybluemix.net/"},
    {t: "Dictation.io - Speech to text in any language", u: "https://dictation.io/speech"},
   ]},
   {title: "Podcasts", links: [
-   {t: "Machine Learning Daily", u: "https://softwareengineeringdaily.com/category/all-episodes/exclusive-content/Podcast/"},
    {t: "Talking machines", u: "https://www.thetalkingmachines.com/"},
    {t: "This Week in ML & AI", u: "https://twimlai.com/"},
    {t: "podcast.__init__", u: "https://www.podcastinit.com/"},
@@ -1057,7 +1038,6 @@ const DATA = [
    {t: "Virtual Reality", u: "https://www.youtube.com/channel/UCzuqhhs6NWbgTzMuM09WKDQ/featured"},
    {t: "Unboxholics", u: "https://www.youtube.com/user/Unboxholics/videos"},
    {t: "Mikeius Official", u: "https://www.youtube.com/user/MikeiusOfficial/videos"},
-   {t: "liberlandvibes Nick Lyberis music channel", u: "https://www.youtube.com/@memovigor4988/videos"},
    {t: "RadioArvyla", u: "https://www.youtube.com/user/RADIOARVYLAofficial/videos"},
    {t: "Γιάννης Λουκάκος συνταγές μαγειρικής", u: "https://www.youtube.com/channel/UCbK7i-PotInIjVHhMxM25gA/videos"},
    {t: "DAVIES MEDIA DESIGN (GIMP, Inkscape)", u: "https://www.youtube.com/user/DaViesMediaDesign/videos"},
@@ -1084,7 +1064,6 @@ const DATA = [
   ]},
   {title: "Δημιουργία PC", links: [
    {t: "Δημιουργία λίστας υλικών", u: "https://www.bestprice.gr/"},
-   {t: "Υπολογισμός τροφοδοτικού", u: "https://outervision.com/power-supply-calculator"},
   ]},
   {title: "Raspberry pi", links: [
    {t: "Raspberry pi", u: "https://www.raspberrypi.org"},
@@ -1129,7 +1108,6 @@ const DATA = [
   {title: "Recovery", links: [
    {t: "HardDisk recovery (Windows)", u: "https://www.stellarinfo.com/"},
    {t: "Recuva (Windows)", u: "https://www.piriform.com/recuva"},
-   {t: "Forensics Wiki", u: "http://www.forensicswiki.org/wiki/Tools:Data_Recovery"},
   ]},
  ]},
  {id: "sequrity", title: "Security - ip tools", sections: [
@@ -1237,7 +1215,6 @@ const DATA = [
   {title: "Απαραίτητες επεκτάσεις Firefox", links: [
    {t: "ublock origin", u: "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
    {t: "FoxyProxy", u: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/"},
-   {t: "Search Preview", u: "http://searchpreview.de/"},
    {t: "ublock", u: "https://github.com/gorhill/uBlock/releases"},
    {t: "Disconnect", u: "https://addons.mozilla.org/en-us/firefox/addon/disconnect/"},
    {t: "Https everywhere", u: "https://www.eff.org/https-everywhere"},
