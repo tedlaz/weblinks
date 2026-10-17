@@ -15,7 +15,7 @@ function toggleFav(l) {
   saveFavs()
   render()
 }
-const favCategory = () => ({ id: 'favs', title: '★ Αγαπημένα', sections: favs.length ? [{ title: 'Αγαπημένα', links: favs }] : [] })
+const favCategory = () => ({ id: 'favs', title: '★ Favorites', sections: favs.length ? [{ title: 'Favorites', links: favs }] : [] })
 
 // wraps the matched part of text in <mark>
 function highlight(text, q) {
@@ -41,8 +41,8 @@ function linkItem(l, q) {
   if (l.n) body.append(el('small', l.n, { className: 'note' }))
   if (isExternal(l.u)) body.append(el('small', host(l.u), { className: 'host' }))
   a.append(body)
-  const star = el('button', isFav(l.u) ? '★' : '☆', { className: 'star' + (isFav(l.u) ? ' on' : ''), title: 'Αγαπημένο' })
-  star.setAttribute('aria-label', 'Αγαπημένο: ' + l.t)
+  const star = el('button', isFav(l.u) ? '★' : '☆', { className: 'star' + (isFav(l.u) ? ' on' : ''), title: 'Favorite' })
+  star.setAttribute('aria-label', 'Favorite: ' + l.t)
   star.onclick = () => toggleFav(l)
   li.append(a, star)
   return li
@@ -79,7 +79,7 @@ function render() {
       if (s.group) content.append(el('h2', s.group, { className: 'group', id: 's-' + s.from }))
       content.append(card(s.title, s.links, ''))
     }
-    if (!cat.sections.length) content.append(el('p', 'Πάτα ☆ σε οποιοδήποτε link για να το προσθέσεις εδώ.', { className: 'empty' }))
+    if (!cat.sections.length) content.append(el('p', 'Click ☆ on any link to add it here.', { className: 'empty' }))
     if (id !== cat.id) $('s-' + id)?.scrollIntoView()
     return
   }
@@ -93,9 +93,9 @@ function render() {
       if (links.length) { n += links.length; content.append(card(s.title, links, q, group)) }
     }
   }
-  $('page-title').textContent = 'Αναζήτηση: ' + $('search').value.trim()
-  $('page-meta').textContent = n + ' αποτελέσματα'
-  if (!n) content.append(el('p', 'Δεν βρέθηκε τίποτα.', { className: 'empty' }))
+  $('page-title').textContent = 'Search: ' + $('search').value.trim()
+  $('page-meta').textContent = n + (n === 1 ? ' result' : ' results')
+  if (!n) content.append(el('p', 'Nothing found.', { className: 'empty' }))
 }
 
 function setMenu(open) {
