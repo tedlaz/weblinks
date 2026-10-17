@@ -1,118 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">
 
 <head>
-    <meta charset="UTF-8">
-
-    <title>ted-links</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ted-links</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-
-
-
- <div id="wrapper">
-
-  <!-- Sidebar -->
-  <div id="sidebar-wrapper">
-    <script src="sidemenu.js"></script>
+  <div id="wrapper">
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav" id="menu"></ul>
+    </nav>
+    <main id="page-content-wrapper">
+      <div class="toolbar">
+        <button id="menu-toggle" class="btn">Toggle Menu</button>
+        <input id="search" type="search" placeholder="Αναζήτηση σε όλα τα links..." aria-label="Αναζήτηση">
+      </div>
+      <div id="content"></div>
+    </main>
   </div>
-  <!-- /#sidebar-wrapper -->
-
-  <!-- Page Content -->
-  <div id="page-content-wrapper">
-  <div class="container-fluid">
-  <div class="row">
-  <div class="col-lg-12">
-    <a href="#menu-toggle" class="btn btn-sm btn-danger" id="menu-toggle">Toggle Menu</a>
-
-<h3>News</h3>
-<ul>
-<li><a href="https://news.google.com/news?edchanged=1&ned=el_gr&authuser=0" target="_blank">Google News</a></li>
-<li><a href="https://www.protothema.gr/" target="_blank">protothema.gr</a></li>
-<li><a href="http://www.tvxs.gr" target="_blank">tvxs.gr</a></li>
-<li><a href="https://www.tovima.gr/" target="_blank">ΤΟ ΒΗΜΑ</a></li>
-<li><a href="https://www.tanea.gr/" target="_blank">ΤΑ ΝΕΑ</a></li>
-<li><a href="http://www.newsit.gr/" target="_blank">Newsit.gr</a></li>
-<li><a href="http://news247.gr/" target="_blank">news247.gr</a></li>
-<li><a href="https://www.frontpages.gr/" target="_blank">Newspaper Frontpages</a></li>
-<li><a href="http://fimotro.blogspot.com/" target="_blank">Fimotro (Blog)</a></li>
-<li><a href="http://www.ellinofreneianet.gr/" target="_blank">Ellinofreneia</a></li>
-
-</ul>
-
-<h3>Financial News</h3>
-<ul>
-<li><a href="http://www.capital.gr/wmarkets.asp" target="_blank">Capital.gr worldmarkets</a></li>
-<li><a href="https://coinmarketcap.com/" target="_blank">Coinmarketcup Cryptocurrencies</a></li>
-<li><a href="http://www.capital.gr" target="_blank">Capital</a></li>
-<li><a href="http://www.naftemporiki.gr/" target="_blank">Naftemporiki</a></li>
-<li><a href="http://www.euro2day.gr" target="_blank">Euro2Day</a></li>
-<li><a href="http://www.usdebtclock.org/" target="_blank">USA Debt Clock</a></li>
-</ul>
-
-<h3>Weather</h3>
-<ul>
-<li><a href="http://wttr.in/Athens, Greece" target="_blank">wttr.in - Athens</a></li>
-<li><a href="http://www.meteo.gr/" target="_blank">Meteo.gr</a></li>
-<li><a href="http://www.wunderground.com/wundermap/?lat=37.983299&lon=23.733299&zoom=10&wxsn=1" target="_blank">Wunderground Attica</a></li>
-</ul>
-
-<h3>IT News - Reviews - Shows </h3>
-<ul>
-<li><a href="https://www.techpowerup.com/" target="_blank">TECHPowerUP</a></li>
-<li><a href="https://news.ycombinator.com/" target="_blank">Hacker news</a></li>
-<li><a href="https://hackernoon.com/" target="_blank">Hackernoon</a></li>
-<li><a href="https://www.dwrean.net/" target="_blank">dwrean.net</a></li>
-<li><a href="https://www.lovefortechnology.net/" target="_blank">lovefortechnology.net</a></li>
-<li><a href="https://arstechnica.com/" target="_blank">arsTECHNICA</a></li>
-<li><a href="http://itsfoss.com/" target="_blank">it's F.O.S.S.</a></li>
-<li><a href="https://opensource.com/" target="_blank">opensource.com</a></li>
-<li><a href="http://www.theverge.com/" target="_blank">The Verge</a></li>
-<li><a href="http://techblog.gr/" target="_blank">Techblog.gr</a></li>
-<li><a href="http://www.engadget.com/" target="_blank">Engadget - News </a></li>
-<li><a href="http://www.dpreview.com/" target="_blank">Digital Photography Review</a></li>
-<li><a href="http://www.howtogeek.com/" target="_blank">HowToGeek</a></li>
-<li><a href="http://anekdota.duckdns.org/" target="_blank">Greek jokes</a></li>
-</ul>
-
-<h3>Video online - TV</h3>
-<ul>
-<li><a href="https://vimeo.com/" target="_blank">Vimeo</a></li>
-<li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-<li><a href="http://programmatileorasis.gr" target="_blank">Greek TV Guide</a></li>
-<li><a href="http://www.mezzo.tv/" target="_blank">mezzo tv</a></li>
-</ul>
-
-
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- /#page-content-wrapper -->
-
-</div>
-<!-- /#wrapper -->
-
-<!-- jQuery -->
-<script src="jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="bootstrap.min.js"></script>
-
-<!-- Menu Toggle Script -->
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
-</script>
-
+  <script src="links.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

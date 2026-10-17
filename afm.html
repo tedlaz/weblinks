@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Έλεγχος ΑΦΜ</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="esstyle.css">
+</head>
+<body>
+  <h1>Αλγοριθμικός έλεγχος Ελληνικού ΑΦΜ</h1>
+  <input id="c" inputmode="numeric" maxlength="9" placeholder="Δώσε ΑΦΜ εδώ" autofocus>
+  <h2 id="f"></h2>
+  <p><a href="index.html#tax">← Φορολογικά</a></p>
+  <script>
+    function isValidAFM(afm) {
+      if (!/^\d{9}$/.test(afm)) return false
+      let sum = 0
+      for (let i = 0; i < 8; i++) sum += afm[i] << (8 - i)
+      return (sum % 11) % 10 === +afm[8]
+    }
+    const c = document.getElementById('c'), f = document.getElementById('f')
+    c.oninput = () => {
+      if (c.value.length !== 9) return (f.textContent = '')
+      const ok = isValidAFM(c.value)
+      f.style.color = ok ? 'green' : 'red'
+      f.textContent = ok ? 'Σωστό (Μπορεί να είναι ΑΦΜ)' : 'Λάθος (Δεν είναι ΑΦΜ)'
+    }
+  </script>
+</body>
+</html>

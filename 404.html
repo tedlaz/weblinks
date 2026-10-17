@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>ted-links</title>
+  <!-- GitHub Pages fallback: old pages like sequrity.html -> index.html#sequrity -->
+  <script>
+    const name = location.pathname.split('/').pop().replace(/\.html$/, '')
+    location.replace(location.pathname.replace(/[^/]*$/, '') + 'index.html' + (name ? '#' + name : ''))
+  </script>
+</head>
+<body></body>
+</html>
