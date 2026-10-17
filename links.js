@@ -406,7 +406,7 @@ const DATA = [
  ]},
  {id: "services", title: "Government & Services", aliases: ["tax","webserv"], sections: [
   {title: "gov.gr", from: "tax", group: "Greek Tax", links: [
-   {t: "Greek tax ID (AFM) validator", u: "afm.html"},
+   {t: "Greek tax ID (AFM) validator", tool: "afm"},
    {t: "gov.gr", u: "https://www.gov.gr/"},
    {t: "fomo.gr - Guides to Greek government services", u: "https://www.fomo.gr/"},
    {t: "800 euro employee benefit", u: "https://supportemployees.yeka.gr"},

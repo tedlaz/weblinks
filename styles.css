@@ -441,3 +441,50 @@ mark {
         transition: none !important;
     }
 }
+
+/* Inline tools */
+
+.card li.tool {
+    display: block;
+    padding: 6px 8px 8px 34px;
+}
+
+.card li.tool:hover {
+    background: none;
+    box-shadow: none;
+}
+
+.tool-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.tool input {
+    width: 140px;
+    padding: 4px 8px;
+    font: 15px var(--mono);
+    color: var(--yellow);
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+}
+
+.tool input:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: var(--glow);
+}
+
+.tool output {
+    font: 700 14px var(--mono);
+}
+
+.tool output.ok {
+    color: var(--green);
+}
+
+.tool output.bad {
+    color: #ff5555;
+}

@@ -26,7 +26,35 @@ function highlight(text, q) {
   return span
 }
 
+// Greek tax ID (AFM) check digit
+function isValidAFM(afm) {
+  if (!/^\d{9}$/.test(afm)) return false
+  let sum = 0
+  for (let i = 0; i < 8; i++) sum += afm[i] << (8 - i)
+  return (sum % 11) % 10 === +afm[8]
+}
+
+// inline tools: links.js entries with {tool: "<name>"} instead of a url
+const TOOLS = {
+  afm(l, q) {
+    const li = el('li', '', { className: 'tool' })
+    const input = el('input', '', { inputMode: 'numeric', maxLength: 9, placeholder: '9-digit AFM', ariaLabel: l.t })
+    const out = el('output', '')
+    input.oninput = () => {
+      input.value = input.value.replace(/\D/g, '')
+      const ok = isValidAFM(input.value)
+      out.textContent = input.value.length < 9 ? '' : ok ? '✓ Valid' : '✗ Invalid'
+      out.className = ok ? 'ok' : 'bad'
+    }
+    const row = el('div', '', { className: 'tool-row' })
+    row.append(input, out)
+    li.append(highlight(l.t, q), row)
+    return li
+  },
+}
+
 function linkItem(l, q) {
+  if (l.tool) return TOOLS[l.tool](l, q)
   const li = el('li')
   const a = el('a', '', { href: l.u, className: 'link' })
   if (isExternal(l.u)) {
@@ -119,7 +147,7 @@ $('search').onkeydown = e => {
   if (e.key === 'Enter') $('content').querySelector('a.link')?.click()
 }
 document.onkeydown = e => {
-  if (e.key === '/' && document.activeElement !== $('search')) { e.preventDefault(); $('search').focus() }
+  if (e.key === '/' && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) { e.preventDefault(); $('search').focus() }
 }
 window.onhashchange = () => { $('search').value = ''; window.scrollTo(0, 0); render() }
 render()
