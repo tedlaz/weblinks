@@ -414,8 +414,8 @@ const DATA = [
    {t: "Μεταφορικό ισοδύναμο", u: "https://metaforikoisodynamo.gr/"},
   ]},
   {title: "Ασφαλιστικά  Εργατικά", links: [
-   {t: "Εργάνη - Εργαζόμενοι", u: "https://eservices.yeka.gr"},
-   {t: "Εργάνη - Επιχειρήσεις", u: "https://myergani.gov.gr/"},
+   {t: "Εργάνη - Επιχειρήσεις", u: "https://eservices.yeka.gr"},
+   {t: "Εργάνη - Εργαζόμενοι", u: "https://myergani.gov.gr/"},
    {t: "ΕΦΚΑ", u: "https://www.efka.gov.gr/"},
    {t: "ΤΕΚΑ επιβεβαίωση υπαγωγής", u: "https://www.e-efka.gov.gr/el/elektronikes-yperesies/elektronike-yperesia-epibebaioses-ypagoges-teka"},
    {t: "ΑΤΛΑΣ Εθν.Μητρώο Ασφάλισης", u: "https://www.atlas.gov.gr/ATLAS/Atlas/Login.aspx"},
