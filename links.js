@@ -48,7 +48,6 @@ const DATA = [
    {t: "mezzo tv", u: "https://www.mezzo.tv/"},
   ]},
   {title: "Magazines official", from: "magazines", group: "Magazines", links: [
-   {t: "Linux Format", u: "https://www.linuxformat.com/"},
    {t: "Open Source For You", u: "https://opensourceforu.com/"},
    {t: "Ubuntu-Fullcircle", u: "https://fullcirclemagazine.org/"},
    {t: "Linux Journal", u: "https://www.linuxjournal.com/"},
@@ -58,10 +57,7 @@ const DATA = [
    {t: "Computer Music", u: "https://www.musicradar.com/computermusic"},
   ]},
   {title: "Magazine providers", links: [
-   {t: "Free Magazines", u: "https://freemagazines.top/"},
    {t: "downmagaz", u: "https://downmagaz.net/"},
-   {t: "Magazinelib", u: "https://magazinelib.com/"},
-   {t: "ISUU", u: "https://issuu.com/"},
    {t: "Greek Comics", u: "https://users.sch.gr/vasanagno/comics.html"},
   ]},
  ]},
@@ -71,13 +67,12 @@ const DATA = [
    {t: "DuckDuckGo", u: "https://duckduckgo.com/"},
    {t: "zlibrary english pdf", u: "https://1lib.sk/s/?content_type=book&languages%5B%5D=english&extensions%5B%5D=PDF"},
    {t: "wikipedia", u: "https://en.wikipedia.org/"},
-   {t: "CIA's World Factbook", u: "https://www.cia.gov/the-world-factbook/"},
   ]},
   {title: "Maps", links: [
+   {t: "Google Maps - Athens", u: "https://maps.google.com/maps?ie=UTF8&z=12&ll=38.055661,23.773727&spn=0.134357,0.281868&om=1"},
    {t: "Google Earth", u: "https://earth.google.com/web/@38.76961746,23.38966796,171.71015808a,1240866.95574805d,35y,-0.00000019h,31.39760723t,0.00000084r?beta=1"},
    {t: "OpenStreetMap - Route planner", u: "https://map.project-osrm.org/"},
    {t: "OpenStreetMap - Free mapping", u: "https://www.openstreetmap.org/"},
-   {t: "Google Maps - Athens", u: "https://maps.google.com/maps?ie=UTF8&z=12&ll=38.055661,23.773727&spn=0.134357,0.281868&om=1"},
    {t: "Microsoft Live Maps", u: "https://www.bing.com/maps"},
    {t: "MarineTraffic - Live ship map", u: "https://www.marinetraffic.com/ais/"},
    {t: "Flightradar24 - Live flight map", u: "https://www.flightradar24.com/"},
@@ -118,23 +113,22 @@ const DATA = [
    {t: "criterion top movies ever", u: "https://www.criterion.com/shop/browse/list?sort=spine_number"},
   ]},
   {title: "Movies & series", links: [
-   {t: "dvd-trailers.gr - Greek (and other) movie info", u: "https://www.dvd-trailers.gr/"},
-   {t: "Greek-movies.com", u: "https://greek-movies.com/"},
-   {t: "FilmOn", u: "https://www.filmon.com/"},
-   {t: "KissCartoon", u: "https://kisscartoon.is/"},
    {t: "ERT-FLIX", u: "https://www.ertflix.gr/"},
-   {t: "merlins.gr - Music films etc", u: "https://merlins.gr/"},
+   {t: "Greek-movies.com", u: "https://greek-movies.com/"},
+   {t: "dvd-trailers.gr - Greek (and other) movie info", u: "https://www.dvd-trailers.gr/"},
+   {t: "KissCartoon", u: "https://kisscartoon.is/"},
+   {t: "T0rrentFreak", u: "https://torrentfreak.com/"},
   ]},
   {title: "Subtitles", links: [
    {t: "subtitles.gr", u: "https://www.subtitles.gr/"},
-   {t: "Open Subtitles", u: "https://www.opensubtitles.org/"},
-   {t: "Subs4free", u: "http://www.subs4free.com/"},
+   {t: "Open Subtitles", u: "https://www.opensubtitles.com/"},
+   {t: "Open Subtitles org", u: "https://www.opensubtitles.org/"},
   ]},
   {title: "other", links: [
    {t: "stremio", u: "https://www.stremio.com/"},
    {t: "Realdebrid", u: "https://real-debrid.com/"},
   ]},
-  {title: "Online music guides - Recommendations - Search", from: "music", group: "Music", links: [
+  {title: "Recommendations / Search", from: "music", group: "Music", links: [
    {t: "Find the original song", u: "https://secondhandsongs.com/"},
    {t: "AllMusic", u: "https://www.allmusic.com/"},
    {t: "Rate Your Music", u: "https://rateyourmusic.com"},
@@ -149,7 +143,7 @@ const DATA = [
    {t: "jazz photos", u: "https://www.tumblr.com/search/Sonny+Stitt/"},
    {t: "Jazz transcriptions", u: "https://www.mindformusic.com/"},
   ]},
-  {title: "Online music - Radio", links: [
+  {title: "Radio", links: [
    {t: "Internet Radio Browser", u: "https://www.radio-browser.info/"},
    {t: "Jamendo - free music !!!", u: "https://www.jamendo.com/"},
    {t: "World Radio Map", u: "https://worldradiomap.com/"},
@@ -176,7 +170,6 @@ const DATA = [
    {t: "calf plugins (Linux only)", u: "https://calf-studio-gear.org/"},
    {t: "Hydrogen Drum Machine", u: "http://www.hydrogen-music.org/"},
    {t: "LMMS", u: "https://lmms.io/"},
-   {t: "Csound - audio synthesis software", u: "http://www.csounds.com/"},
    {t: "MuseScore - Music notation", u: "https://musescore.org/"},
    {t: "LilyPond - Music notation", u: "https://lilypond.org/"},
    {t: "Frescobaldi for Lilypond", u: "https://www.frescobaldi.org/"},
@@ -345,11 +338,11 @@ const DATA = [
   ]},
  ]},
  {id: "shopping", title: "Shopping & Travel", aliases: ["stores","trips"], sections: [
-  {title: "Product & price comparison", from: "stores", group: "E-Stores", links: [
+  {title: "Greek stores", from: "stores", group: "E-Stores", links: [
    {t: "Scroutz", u: "https://www.skroutz.gr"},
    {t: "Best Price", u: "https://www.bestprice.gr/"},
   ]},
-  {title: "Various online stores", links: [
+  {title: "Various stores", links: [
    {t: "SharewareOnSale", u: "https://sharewareonsale.com/"},
    {t: "Sports Direct - Clothes & shoes", u: "https://gr.sportsdirect.com/"},
    {t: "Aliexpress", u: "https://www.aliexpress.com/"},
@@ -358,10 +351,9 @@ const DATA = [
    {t: "Knives - Pocket knives - etc", u: "https://www.knife.gr/"},
    {t: "e-FOOD.gr", u: "https://www.e-food.gr/"},
   ]},
-  {title: "Online bookstores", links: [
+  {title: "Bookstores", links: [
    {t: "Politeia bookstore", u: "https://www.politeianet.gr/"},
    {t: "ebooks.gr", u: "https://www.ebooks.gr/"},
-   {t: "Eleftheroudakis", u: "http://www.books.gr/"},
    {t: "Protoporia", u: "https://www.protoporia.gr/"},
    {t: "Amazon", u: "https://www.amazon.com"},
   ]},
@@ -381,10 +373,11 @@ const DATA = [
    {t: "Monette trumpets", u: "https://www.monette.net/"},
    {t: "Smart noiz - Music gear classifieds", u: "https://smart.noiz.gr/"},
   ]},
-  {title: "Game stores online", links: [
+  {title: "Games", links: [
    {t: "ALLKEYSHOP", u: "https://www.allkeyshop.com/"},
    {t: "eneba.com", u: "https://www.eneba.com/"},
    {t: "isThereAnyDeal.com", u: "https://isthereanydeal.com/"},
+   {t: "G2A", u: "https://www.g2a.com/en/"},
    {t: "Steam", u: "https://store.steampowered.com/"},
    {t: "kingwin", u: "http://www.kinguin.gr"},
    {t: "cdkeys.com", u: "https://www.cdkeys.com/"},
@@ -400,47 +393,47 @@ const DATA = [
    {t: "airbnb.gr", u: "https://www.airbnb.gr/"},
   ]},
  ]},
- {id: "services", title: "Government & Services", aliases: ["tax","webserv"], sections: [
-  {title: "gov.gr", from: "tax", group: "Greek Tax", links: [
+ {id: "gov", title: "Ελληνική Κυβέρνηση", aliases: ["tax"], sections: [
+  {title: "Κυβέρνηση", from: "tax", group: "Greek Tax", links: [
    {t: "gov.gr", u: "https://www.gov.gr/"},
-   {t: "800 euro employee benefit", u: "https://supportemployees.yeka.gr"},
-   {t: "Diavgeia (government transparency)", u: "https://et.diavgeia.gov.gr"},
-   {t: "National Printing Office (Government Gazette)", u: "https://www.et.gr/"},
+   {t: "Διαύγεια", u: "https://et.diavgeia.gov.gr"},
+   {t: "Εθνικό Τυπογραφείο", u: "https://www.et.gr/"},
   ]},
-  {title: "Greek Tax", links: [
+  {title: "Φορολογικά", links: [
    {t: "TaxHeaven", u: "https://www.taxheaven.gr"},
    {t: "myAADE", u: "https://www1.aade.gr/gsisapps5/myaade/#!/arxiki"},
-   {t: "GEMI - Business activity code check", u: "https://commercial-activity-codes.businessportal.gr/"},
-   {t: "myAADE add/remove activity codes (KAD): Registry & Contact > Change Registry Details > Business Details > Change Business Details", u: "https://www1.aade.gr/aadeapps3/myaade/#!/"},
-   {t: "Find & print vehicle road tax", u: "https://www1.aade.gr/myaade/telh-kykloforias-without-sso/"},
-   {t: "Vehicle insurance check", u: "https://www.hic.gr/hic/check_ins.aspx"},
-   {t: "Social dividend", u: "https://www.koinonikomerisma.gr/"},
-   {t: "Social residential electricity tariff", u: "https://www.idika.gr/kot"},
-   {t: "Social solidarity income", u: "https://keaprogram.gr/pubnr/Account/Login"},
-   {t: "Ath.Ena Card (unemployment / disability)", u: "https://www.idika.gr/athenacard/"},
-   {t: "Property square meters correction platform (municipalities)", u: "https://tetragonika.govapp.gr/"},
-   {t: "Transport equivalent for islanders", u: "https://metaforikoisodynamo.gr/"},
+   {t: "ΓΕΜΗ: Έλεγχος Εμπορικών Δραστηριοτήτων", u: "https://commercial-activity-codes.businessportal.gr/"},
+   {t: "myAADE αλλαγή/προσθήκη ΚΑΔ: Μητρώο & επικοινωνία > Αλλαγή > Λεπτομέρειες > Αλλαγή", u: "https://www1.aade.gr/aadeapps3/myaade/#!/"},
+   {t: "Τέλη Κυκλοφορίας Αυτοκινήτων", u: "https://www1.aade.gr/myaade/telh-kykloforias-without-sso/"},
+   {t: "Έλεγχος ασφάλισης αυτοκινήτου", u: "https://www.hic.gr/hic/check_ins.aspx"},
+   {t: "Κοινωνικό μέρισμα", u: "https://www.koinonikomerisma.gr/"},
+   {t: "Κοινωνικό οικιακό τιμολόγιο", u: "https://www.idika.gr/kot"},
+   {t: "Ελάχιστο εγγυημένο εισόδημα", u: "https://keaprogram.gr/pubnr/Account/Login"},
+   {t: "Ath.Ena κάρτα (Αναπηρία/Ανεργία)", u: "https://www.idika.gr/athenacard/"},
+   {t: "Διόρθωση τ.μ. ακινήτων", u: "https://tetragonika.govapp.gr/"},
+   {t: "Μεταφορικό ισοδύναμο", u: "https://metaforikoisodynamo.gr/"},
   ]},
-  {title: "Social security & Labour", links: [
-   {t: "ERGANI - Employers", u: "https://eservices.yeka.gr"},
-   {t: "ERGANI - Employees", u: "https://myergani.gov.gr/"},
-   {t: "EFKA (social security)", u: "https://www.efka.gov.gr/"},
-   {t: "TEKA - Coverage check", u: "https://www.e-efka.gov.gr/el/elektronikes-yperesies/elektronike-yperesia-epibebaioses-ypagoges-teka"},
-   {t: "National Insurance Registry", u: "https://www.atlas.gov.gr/ATLAS/Atlas/Login.aspx"},
-   {t: "TEBE-OAEE", u: "https://www.oaee.gr"},
-   {t: "MTPY Civil Servants Fund", u: "https://www.mtpy.gr/"},
-   {t: "Labour Law Bulletin", u: "https://www.den.gr"},
-   {t: "Find / check AMKA (social security number)", u: "https://www.amka.gr/AMKAGR/"},
-   {t: "Ergatika.gr - Payroll - Submissions etc", u: "https://ergatika.gr"},
-   {t: "GSEE Information center for employees & unemployed", u: "https://www.kepea.gr/"},
+  {title: "Ασφαλιστικά  Εργατικά", links: [
+   {t: "Εργάνη - Εργαζόμενοι", u: "https://eservices.yeka.gr"},
+   {t: "Εργάνη - Επιχειρήσεις", u: "https://myergani.gov.gr/"},
+   {t: "ΕΦΚΑ", u: "https://www.efka.gov.gr/"},
+   {t: "ΤΕΚΑ επιβεβαίωση υπαγωγής", u: "https://www.e-efka.gov.gr/el/elektronikes-yperesies/elektronike-yperesia-epibebaioses-ypagoges-teka"},
+   {t: "ΑΤΛΑΣ Εθν.Μητρώο Ασφάλισης", u: "https://www.atlas.gov.gr/ATLAS/Atlas/Login.aspx"},
+   {t: "Μετοχικό Ταμείο Πολιτικών Υπαλλήλων", u: "https://www.mtpy.gr/"},
+   {t: "Δελτίο Εργατικής Νομοθεσίας", u: "https://www.den.gr"},
+   {t: "Αναζήτηση ΑΜΚΑ", u: "https://www.amka.gr/AMKAGR/"},
+   {t: "Ergatika.gr", u: "https://ergatika.gr"},
+   {t: "Γενική Συνομοσπονδία Εργατών Ελλάδος", u: "https://www.kepea.gr/"},
   ]},
-  {title: "Misc", links: [
-   {t: "Hellenic Data Protection Authority", u: "https://www.dpa.gr/"},
+  {title: "Διάφορα", links: [
+   {t: "Aρχή Προστασίας Δεδομένων", u: "https://www.dpa.gr/"},
   ]},
-  {title: "VAT number check", links: [
-   {t: "VIES - EU VAT number check", u: "https://ec.europa.eu/taxation_customs/vies/"},
-   {t: "Greek tax ID (AFM) validator", tool: "afm"},
+  {title: "ΦΠΑ", links: [
+   {t: "VIES - Έλεγχος ΑΦΜ", u: "https://ec.europa.eu/taxation_customs/vies/"},
+   {t: "Αλγοριθμικός έλεγχος ΑΦΜ", tool: "afm"},
   ]},
+ ]},
+ {id: "services", title: "Services", aliases: ["webserv"], sections: [
   {title: "web email", from: "webserv", group: "Web services", links: [
    {t: "mailinator", u: "https://www.mailinator.com/"},
    {t: "temp-mail - temporary email", u: "https://temp-mail.org/"},
@@ -476,8 +469,7 @@ const DATA = [
    {t: "degoo", u: "https://app.degoo.com/"},
    {t: "idrive", u: "https://www.idrive.com/"},
   ]},
-  {title: "Sharing Files ;-)", links: [
-   {t: "ShareDrop", u: "https://www.sharedrop.io/"},
+  {title: "Sharing Files", links: [
    {t: "gofile.io", u: "https://gofile.io/"},
    {t: "PASTEBIN - copy/paste share!!!", u: "https://pastebin.com/"},
    {t: "Imgur - Share Images", u: "https://imgur.com/"},
@@ -522,15 +514,15 @@ const DATA = [
    {t: "ELTA Courier", u: "https://www.elta-courier.gr"},
   ]},
  ]},
- {id: "software", title: "Software", aliases: ["downloads","soft-server","soft-media","soft-office","soft-web","chromeExt","firefoxExtensions"], sections: [
+ {id: "software", title: "Books & Software", aliases: ["downloads","soft-server","soft-media","soft-office","soft-web","chromeExt","firefoxExtensions"], sections: [
   {title: "Books", from: "downloads", group: "Downloads", links: [
+   {t: "ZLibrary", u: "https://1lib.sk"},
    {t: "codeprog (forcoder)", u: "https://coderprog.com/"},
    {t: "Any New Books", u: "https://anynewbooks.com/category/programming/"},
    {t: "Free Greek pdf books", u: "https://www.ebooks4greeks.gr/δωρεανελληνικα-ηλεκτρονικαβιβλια-free-ebooks"},
    {t: "Kallipos - Greek academic textbooks", u: "https://repository.kallipos.gr/"},
    {t: "Genesis Library", u: "http://gen.lib.rus.ec/"},
    {t: "Genesis Library alias", u: "http://libgen.rs/"},
-   {t: "ZLibrary", u: "https://1lib.sk"},
    {t: "Reddit Links for books", u: "https://www.reddit.com/r/Piracy/wiki/megathread#wiki_iv._ebooks.2Ftextbooks"},
    {t: "Livrivox - Free audio books", u: "https://librivox.org/"},
    {t: "Loyalbooks - Free audio books", u: "https://www.loyalbooks.com/"},
@@ -540,7 +532,10 @@ const DATA = [
    {t: "Megadownloads", u: "https://fora.snahp.eu/"},
    {t: "Avax", u: "https://avxhm.se/"},
    {t: "sendme", u: "https://github.com/n0-computer/sendme"},
-   {t: "T0rrentFreak", u: "https://torrentfreak.com/"},
+  ]},
+   {title: "Modern software", links: [
+   {t: "craft apps", u: "https://getartcraft.com/apps"},
+   {t: "IngeTrazo sketch", u: "https://ingetrazo.com/en/"},
   ]},
   {title: "Wallpapers - Images", links: [
    {t: "Deviant Art Wallpapers-pictures", u: "https://www.deviantart.com/"},
@@ -971,10 +966,7 @@ const DATA = [
    {t: "laptopmedia", u: "https://laptopmedia.com/"},
    {t: "Notebook Check - Reviews", u: "https://www.notebookcheck.net/"},
    {t: "Laptop Magazine - Reviews", u: "https://www.laptopmag.com/"},
-   {t: "Notebook Review", u: "http://www.notebookreview.com/"},
-  ]},
-  {title: "Build a PC", links: [
-   {t: "Parts list builder", u: "https://www.bestprice.gr/"},
+   {t: "Best laptop deals", u: "https://www.bestlaptop.deals/"},
   ]},
   {title: "Raspberry pi - Arduino", links: [
    {t: "Raspberry pi", u: "https://www.raspberrypi.org"},
@@ -982,15 +974,10 @@ const DATA = [
    {t: "Arch Linux Arm", u: "https://archlinuxarm.org/"},
    {t: "Arduino Project", u: "https://arduino.cc/"},
   ]},
-  {title: "Hardware for a Kodi (XBMC) media PC", links: [
+  {title: "small factor pc", links: [
    {t: "Intel NUC", u: "https://www.skroutz.gr/c/329/barebones.html?from=most-popular&keyphrase=nuc"},
    {t: "Intel NUC info", u: "https://www.intel.com/content/www/us/en/nuc/overview.html"},
-   {t: "2.Memory", u: "https://www.skroutz.gr/c/56/mnhmes-pc-ram.html?from=catspan&keyphrase=sodimm+1.35"},
-   {t: "3.wifi card (optional)", u: "https://www.skroutz.gr/c/128/kartes-wifi-adaptores.html?keyphrase=intel+wifi&order_dir=asc&page=2"},
-   {t: "4.mSata disk (optional)", u: "https://www.skroutz.gr/c/88/ssd-sklhroi-diskoi.html?from=catspan&keyphrase=msata"},
-   {t: "5.ssd disk 2.5 (optional)", u: "https://www.skroutz.gr/c/88/ssd-sklhroi-diskoi/f/252963/2-5.html?keyphrase=ssd"},
-   {t: "6.hdd disk 2.5 (optional)", u: "https://www.skroutz.gr/c/1715/hdd_sklhroi_diskoi.html?from=catspan&keyphrase=2.5+hdd"},
-   {t: "7.OpenElec", u: "http://openelec.tv/"},
+   {t: "Beelink", u: "https://www.bee-link.com/"},
   ]},
   {title: "Hardware for a pfSense firewall", links: [
    {t: "pcengines", u: "https://www.pcengines.ch/"},
@@ -1006,9 +993,9 @@ const DATA = [
    {t: "Yuneec", u: "https://yuneec.com/"},
    {t: "Parrot", u: "https://www.parrot.com/"},
    {t: "3DRobotics", u: "https://3drobotics.com/"},
-   {t: "My First Drone", u: "https://myfirstdrone.com/"},
   ]},
   {title: "3D Printers", links: [
+   {t: "Bambu lab", u: "https://bambulab.com/en"},
    {t: "RepRap - Opensource 3D printer", u: "https://reprap.org/"},
    {t: "3Ders - 3D printing news", u: "https://www.3ders.org/"},
   ]},
@@ -1023,7 +1010,7 @@ const DATA = [
    {t: "Speedtest - Internet speed test", u: "https://www.speedtest.net/"},
    {t: "Javascript Speedometer", u: "https://browserbench.org/"},
   ]},
-  {title: "Security General", links: [
+  {title: "General", links: [
    {t: "Prism - Break", u: "https://prism-break.org/"},
    {t: "Privacy tools", u: "https://www.privacytools.io/"},
    {t: "Privacy analyzer", u: "https://privacy.net/analyzer/"},
@@ -1032,7 +1019,7 @@ const DATA = [
    {t: "Google report a phising site", u: "https://safebrowsing.google.com/safebrowsing/report_phish/"},
    {t: "virustotal-check your files for viruses", u: "https://www.virustotal.com/"},
   ]},
-  {title: "Security Software", links: [
+  {title: "Software", links: [
    {t: "BleachBit - Cleaner", u: "https://bleachbit.sourceforge.net/"},
    {t: "Microsoft Safety Scanner", u: "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download"},
    {t: "Microsoft PC Manager", u: "https://pcmanager.microsoft.com/en-us"},
@@ -1042,7 +1029,7 @@ const DATA = [
    {t: "rclone-rsync for cloud storage", u: "https://rclone.org/"},
    {t: "rclone instructions (video)", u: "https://www.youtube.com/watch?v=KBr_qf5G4CY"},
   ]},
-  {title: "Security - Penetration Games", links: [
+  {title: "Penetration Games", links: [
    {t: "Pentester Lab", u: "https://www.pentesterlab.com/"},
    {t: "Hacking Lab", u: "https://www.hacking-lab.com"},
    {t: "Hack this site", u: "https://www.hackthissite.org/"},
@@ -1060,13 +1047,8 @@ const DATA = [
   {title: "Remote", links: [
    {t: "rustdesk", u: "https://rustdesk.com/"},
    {t: "AnyDesk", u: "https://anydesk.com/"},
-   {t: "Real VNC", u: "https://www.realvnc.com/"},
-   {t: "FileZilla ftp", u: "https://filezilla.sourceforge.net/"},
-   {t: "Winscp", u: "https://winscp.net/", n: "Windows only"},
-   {t: "OpenVpn", u: "https://openvpn.net/"},
-   {t: "Easy openvpn Install", u: "https://github.com/Nyr/openvpn-install"},
-   {t: "Zerotier vpn ;-)", u: "https://www.zerotier.com/"},
-   {t: "tailscale ;-)", u: "https://tailscale.com/"},
+   {t: "Zerotier", u: "https://www.zerotier.com/"},
+   {t: "tailscale", u: "https://tailscale.com/"},
   ]},
  ]},
  {id: "personal", title: "Personal & Games", aliases: ["personal","games"], sections: [
@@ -1076,9 +1058,10 @@ const DATA = [
    {t: "eSchedule - Work schedule", u: "https://tedlaz.github.io/eschedule/"},
    {t: "Payroll programs", u: "https://tedlaz.github.io/misjs/index.html"},
   ]},
-  {title: "Personal - Various blogs", links: [
+  {title: "Various", links: [
    {t: "Google's Art Project", u: "https://www.google.com/culturalinstitute/project/art-project"},
    {t: "Philoshophy Experiments", u: "https://www.philosophyexperiments.com/"},
+   {t: "THE EVOLUTION OF TRUST", u: "https://ncase.me/trust/"},
    {t: "Soundcloud - Sounds and Music", u: "https://soundcloud.com"},
    {t: "Discord", u: "https://discordapp.com/login"},
    {t: "foldscope - 1 dollar microscope !!!", u: "https://www.foldscope.com/"},
@@ -1107,18 +1090,21 @@ const DATA = [
   ]},
   {title: "Games", from: "games", group: "Games", links: [
    {t: "metacritic", u: "https://www.metacritic.com/"},
-   {t: "igg Games - guaranteed", u: "https://igg-games.com/"},
+   {t: "igg Games", u: "https://igg-games.com/"},
    {t: "IGN", u: "https://www.ign.com/"},
-   {t: "Gamespot pc reviews", u: "https://www.gamespot.com/pc/reviews/"},
+   {t: "Gamespot pc", u: "https://www.gamespot.com/pc/reviews/"},
    {t: "Wargamer", u: "https://www.wargamer.com"},
    {t: "Origin", u: "https://www.origin.com/"},
    {t: "GuildWars", u: "https://www.guildwars.com/"},
    {t: "mmorpg.com", u: "https://www.mmorpg.com"},
-   {t: "twitch - my channel for streaming games", u: "https://www.twitch.tv/tedlaz"},
+   {t: "twitch", u: "https://www.twitch.tv/tedlaz"},
    {t: "Yucata.de - online card games", u: "https://www.yucata.de/"},
    {t: "Online Play Go", u: "https://online-go.com/"},
    {t: "Puzzle Games", u: "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/"},
-   {t: "G2A", u: "https://www.g2a.com/en/"},
+   {t: "Sudoku", u: "https://sudoku.com/"},
+   {t: "Tetris", u: "https://play.tetris.com/"},
+   {t: "Chess.com", u: "https://www.chess.com/home"},
+   {t: "lichess.org", u: "https://lichess.org/"},
   ]},
   {title: "Games Hardware", links: [
    {t: "Alienware", u: "https://alienware.com/"},
