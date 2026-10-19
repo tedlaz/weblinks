@@ -42,9 +42,9 @@ const DATA = [
    {t: "HowToGeek", u: "https://www.howtogeek.com/"},
   ]},
   {title: "Video online - TV", links: [
+   {t: "Greek TV Guide", u: "https://programmatileorasis.gr"},
    {t: "Vimeo", u: "https://vimeo.com/"},
    {t: "Youtube", u: "https://www.youtube.com/"},
-   {t: "Greek TV Guide", u: "https://programmatileorasis.gr"},
    {t: "mezzo tv", u: "https://www.mezzo.tv/"},
   ]},
   {title: "Magazines official", from: "magazines", group: "Magazines", links: [
@@ -886,6 +886,7 @@ const DATA = [
    {t: "Artificial Analysis Coding", u: "https://artificialanalysis.ai/agents/coding-agents"},
    {t: "Arena.ai", u: "https://arena.ai/leaderboard"},
    {t: "BenchLM", u: "https://benchlm.ai/"},
+   {t: "LM Council", u: "https://lmcouncil.ai/benchmarks"},
   ]},
   {title: "Code Editors & Agents", from: "ai-coding", group: "Coding", links: [
    {t: "Cursor", u: "https://cursor.com/"},
