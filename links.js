@@ -402,7 +402,6 @@ const DATA = [
  {id: "services", title: "Government & Services", aliases: ["tax","webserv"], sections: [
   {title: "gov.gr", from: "tax", group: "Greek Tax", links: [
    {t: "gov.gr", u: "https://www.gov.gr/"},
-   {t: "fomo.gr - Guides to Greek government services", u: "https://www.fomo.gr/"},
    {t: "800 euro employee benefit", u: "https://supportemployees.yeka.gr"},
    {t: "Diavgeia (government transparency)", u: "https://et.diavgeia.gov.gr"},
    {t: "National Printing Office (Government Gazette)", u: "https://www.et.gr/"},
@@ -632,9 +631,6 @@ const DATA = [
    {t: "Disconnect", u: "https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo"},
    {t: "duckduckgo search engine", u: "https://chrome.google.com/webstore/detail/duckduckgo-for-chrome/bpphkkgodbfncbcpgopijlfakfgmclao?hl=en"},
   ]},
-  {title: "Misc", links: [
-   {t: "Cryptocat", u: "https://crypto.cat/"},
-  ]},
   {title: "Essential Firefox extensions", from: "firefoxExtensions", group: "Firefox", links: [
    {t: "ublock origin", u: "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
    {t: "FoxyProxy", u: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/"},
@@ -645,7 +641,6 @@ const DATA = [
   ]},
   {title: "Recommended Firefox extensions", links: [
    {t: "Web Of Trust", u: "https://addons.mozilla.org/el/firefox/addon/wot-safe-browsing-tool/"},
-   {t: "cryptocat", u: "https://crypto.cat/"},
   ]},
  ]},
  {id: "os", title: "Operating Systems", aliases: ["windows","android","linux"], sections: [
@@ -693,7 +688,6 @@ const DATA = [
    {t: "NixOS", u: "https://nixos.org/"},
    {t: "Manjaro Linux (Easy arch)", u: "https://manjaro.org/"},
    {t: "CentOS linux server", u: "https://www.centos.org/"},
-   {t: "Tails live - privacy for anyone anywhere", u: "https://tails.boum.org/"},
    {t: "Kali Linux - Penetration testing", u: "https://www.kali.org/"},
    {t: "DistroWatch", u: "https://distrowatch.com/"},
   ]},
@@ -1031,7 +1025,6 @@ const DATA = [
    {t: "BleachBit - Cleaner", u: "https://bleachbit.sourceforge.net/"},
    {t: "Microsoft Safety Scanner", u: "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download"},
    {t: "Microsoft PC Manager", u: "https://pcmanager.microsoft.com/en-us"},
-   {t: "nmap", u: "https://nmap.org/"},
    {t: "wireshark", u: "https://www.wireshark.org/"},
    {t: "VeraCrypt", u: "https://www.veracrypt.fr"},
    {t: "keepass - Password manager", u: "https://keepass.info/"},
@@ -1107,7 +1100,6 @@ const DATA = [
    {t: "tennis24", u: "https://www.tennis24.gr/"},
    {t: "tennisnews", u: "https://tennisnews.gr/"},
    {t: "RolandGarros", u: "https://www.rolandgarros.com/en-us/"},
-   {t: "acestream search", u: "https://acestreamsearch.net/en/"},
   ]},
   {title: "Games", from: "games", group: "Games", links: [
    {t: "metacritic", u: "https://www.metacritic.com/"},
@@ -1127,11 +1119,6 @@ const DATA = [
   {title: "Games Hardware", links: [
    {t: "Alienware", u: "https://alienware.com/"},
    {t: "Razer", u: "https://www.razerzone.com/"},
-  ]},
-  {title: "Airsoft", links: [
-   {t: "Airsoft Club", u: "https://airsoftclub.gr"},
-   {t: "Airsoft MILSIM", u: "https://www.airsoft-milsim-news.com/"},
-   {t: "Ted-Kon Airsoft", u: "http://users.otenet.gr/~tedlaz/airsoft/"},
   ]},
   {title: "YouTube", links: [
    {t: "Italian Spartacus (Crusader kings, etc)", u: "https://www.youtube.com/user/ItalianSpartacus/videos"},
